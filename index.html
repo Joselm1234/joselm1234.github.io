@@ -1,0 +1,4916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP Informes de Escaneo</title>
+<link
+	href="2024-08-26-ZAP-Report-/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2024-08-26-ZAP-Report-/themes/original/main.css" rel="stylesheet">
+<link
+	href="2024-08-26-ZAP-Report-/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP Informes de Escaneo</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2024-08-26-ZAP-Report-/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on lun 26 ago 2024, at 07:16:22</span>
+		</p>
+		<p>ZAP Version: 2.15.0</p>
+		<p>
+			ZAP is supported by the <a href="https://crashoverride.com/?zap=rep">Crash Override Open Source Fellowship</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-3-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Alto</span>, <span>Confidence</span>=<span
+									class="confidence-level">Media</span> <span>(4)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medio</span>, <span>Confidence</span>=<span
+									class="confidence-level">Alta</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medio</span>, <span>Confidence</span>=<span
+									class="confidence-level">Media</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Medio</span>, <span>Confidence</span>=<span
+									class="confidence-level">Baja</span> <span>(1)</span></a></li>
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Alta</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Media</span> <span>(4)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Alta</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Media</span> <span>(3)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Baja</span> <span>(1)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://www.badstore.net</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">Alto</span>, <span class="risk-level">Medio</span>, <span class="risk-level">Bajo</span>, <span class="risk-level">Informativo</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">Confirmado por Usuario</span>, <span class="confidence-level">Alta</span>, <span class="confidence-level">Media</span>, <span class="confidence-level">Baja</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">Confirmado por Usuario</span>, <span class="confidence-level">Alta</span>, <span class="confidence-level">Media</span>, <span class="confidence-level">Baja</span>, <span class="confidence-level">Falso positivo</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">Confirmado por Usuario</th>
+							<th scope="col">Alta</th>
+							<th scope="col">Media</th>
+							<th scope="col">Baja</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">Alto</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(22,2 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>4</span><br> <span class="additional-info-percentages">(22,2 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medio</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5,6 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5,6 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5,6 %)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(16,7 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Bajo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5,6 %)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(22,2 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>5</span><br> <span class="additional-info-percentages">(27,8 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informativo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(11,1 %)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(16,7 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5,6 %)</span></td>
+							<td><span>6</span><br> <span class="additional-info-percentages">(33,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(22,2 %)</span></td>
+							<td><span>12</span><br> <span
+								class="additional-info-percentages">(66,7 %)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(11,1 %)</span></td>
+							<td><span>18</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>Alto</span><br>  <span
+									class="additional-info-percentages">(= Alto)</span>  
+							</th>
+							<th scope="col">
+								<span>Medio</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medio)</span> 
+							</th>
+							<th scope="col">
+								<span>Bajo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Bajo)</span> 
+							</th>
+							<th scope="col">
+								<span>Informativo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informativo)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://www.badstore.net</th>
+							
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(4)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(7)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(12)</span></td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(18)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Cross Site Scripting (Reflected)</a></th>
+							<td class="risk-level">Alto</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(27,8 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Inyección SQL</a></th>
+							<td class="risk-level">Alto</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5,6 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Inyección SQL - MySQL</a></th>
+							<td class="risk-level">Alto</td>
+							<td><span>12</span><br> <span
+								class="additional-info-percentages">(66,7 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Inyección SQL - SQLite</a></th>
+							<td class="risk-level">Alto</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(22,2 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Ausencia de Ttokens Anti-CSRF</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>45</span><br> <span
+								class="additional-info-percentages">(250,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Cabecera Content Security Policy (CSP) no configurada</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>43</span><br> <span
+								class="additional-info-percentages">(238,9 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Falta de cabecera Anti-Clickjacking</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>38</span><br> <span
+								class="additional-info-percentages">(211,1 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">Cookie No HttpOnly Flag</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(16,7 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">Cookie sin el atributo SameSite</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(16,7 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">Private IP Disclosure</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>9</span><br> <span
+								class="additional-info-percentages">(50,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-10">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>68</span><br> <span
+								class="additional-info-percentages">(377,8 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-11">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>60</span><br> <span
+								class="additional-info-percentages">(333,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-12">GET para POST</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(33,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-13">Modern Web Application</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(11,1 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-14">Petición de Autenticación Identificada</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(22,2 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-15">Respuesta de Gestión de Sesión Identificada</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(33,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-16">User Agent Fuzzer</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>16</span><br> <span
+								class="additional-info-percentages">(88,9 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-17">User Controllable HTML Element Attribute (Potential XSS)</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>50</span><br> <span
+								class="additional-info-percentages">(277,8 %)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>18</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-3-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Alto</span>, <span>Confidence</span>=<span
+							class="confidence-level">Media</span> <span>(4)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://www.badstore.net</span> <span>(4)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Cross Site Scripting (Reflected)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://www.badstore.net/cgi-bin/badstore.cgi?action=moduser</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/01-Testing_for_Reflected_Cross_Site_Scripting">WSTG-v42-INPV-01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/79.html">CWE-79</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS).html">OWASP_2017_A07</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Cross_site Scripting (XSS) es una técnica de ataque que comprende hacer eco del código que fue proporcionado por el atacante en la instancia del navegador de un usuario. Una instancia de navegador puede ser un cliente de navegador web corriente, o un objeto de navegador integrado e un producto de software, como el navegador que se encuentra dentro de WinAmp, un lector de RSS o un cliente de correos electrónicos. El código por sí mismo se encuentra escrito en HTML/JavaScript, pero también puede extenderse a VBScript, ActiveX, Jave, Flash o cualquier otra tecnología que sea compatible con el navegador.</p>
+
+<p>Cuando un atacante consigue el navegador de un usuario para poder ejecutar su código, el código se ejecutará dentro del contexto de seguridad (o zona) del sitio web de hospedaje. Con este nivel de privilegio, el código tiene la extensión de leer, modificar y transmitir cualquier dato que sea sensible al que pueda ingresar al navegador. Un usuario de Cross-Site Scripted puede ser que tenga su cuenta secuetrada (robo de cookies), su navegador redirigido a otra ubicación, posiblemente mostrando contenido ilegal entregado por el sitio web que están visitando. Los ataques de scripting entre los sitios relativamente comprometen la relación de la confianza entre el usuario y el sitio web. Las aplicaciones que usan instancias de objetos del navegador que suben contenido desde el sistema de archivos puede activar el código bajo la zona de lam máquina, lo cual permite que el sistema se vea comprometido.</p>
+
+<p>Hay tres tipos de ataques diferentes de scripting entre los sitios: no persistentes, persistentes y basados en DOM.</p>
+
+<p>Los ataques que no son persistentes y los basados en DOM necesitan que el usuario visite un enlace que fue diseñado con código maliciosos o visite alguna página web maliciosa que incluya un formulario web que, cuando se publique en el sitio que es vulnerable, originará el ataque. El uso de un formulario que es malicioso normalmente tendrá lugarcuando el recurso que es vulnerable solo acepte las solicitudes HTTP POST. En tal caso, el formulario puede se enviado de forma automática, sin el conocimiento de la víctima (por ejemplo, por medio de JavaScript). Al hacer clic en el enlace que es malicioso o al enviar el formulario malicioso, la carga que es útil de CSS recibirá eco y será interpretada por el navegador del usuario y se activará. Otra técnica para poder prevenir solicitudes casi arbitrarias (GET y POST) es por medio del uso de un cliente integrado, como adobe Flash.</p>
+
+<p>Los ataques continuos se originan cuando el código que es malicioso se envía a un sitio web donde se almacena durante un período de tiempo. Algunos ejemplos de los objetivos preferidos de los atacantes incluyen mensajes en carteleras de anuncios, mensajes de correo electrónico y programas de chat. El usuario desprevenido no tendrá que interactuar con ningún sitio/enlace adicional (por ejemplo, un sitio o link malicioso enviado por correo electrónico), solamente bastará con abrir la página web que contiene el código.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (486 bytes)</summary>
+				
+				<pre><code>POST http://www.badstore.net/cgi-bin/badstore.cgi?action=moduser HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://www.badstore.net/cgi-bin/badstore.cgi?action=myaccount
+content-length: 107
+Cookie: SSOid=emFwcm94eUBleGFtcGxlLmNvbTo5MDNhOThkNzA5ZmE0NjgzYWFhYTAzNmI4NGMxMjVhNjpaQVA6%0AVQ%3D%3D%0A
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (107 bytes)</summary>
+				
+				<pre><code>email=%3C%2Fh2%3E%3CscrIpt%3Ealert%281%29%3B%3C%2FscRipt%3E%3Ch2%3E&amp;pwdhint=blue&amp;DoMods=Reset+User+Password</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (224 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 24 Aug 2024 21:51:03 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Cache-Control: no-cache
+ETag: CPE1704TKS
+Pragma: no-cache
+Content-Type: text/html
+content-length: 3991
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3991 bytes)</summary>
+				
+				<pre><code>&lt;BODY bgColor=#ffffff leftMargin=0 topMargin=0 MARGINHEIGHT=&quot;0&quot; MARGINWIDTH=&quot;0&quot;&gt;
+
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 bgColor=#004b2c border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD width=326 bgColor=#004b2c&gt;
+&lt;IMG height=60 alt=&quot;BadStore.net&quot; hspace=0 src=&quot;/images/BadStore.jpg&quot;
+width=350
+border=0&gt;
+  &lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR vAlign=top align=left&gt;
+    &lt;TD vAlign=top width=143 bgColor=#ecece0&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=143 bgColor=#004b2c border=0&gt;
+        &lt;FORM name=search onsubmit=/cgi-bin/badstore.cgi 
+        method=get&gt; 
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD vAlign=top width=143 colSpan=3&gt;
+            &lt;TABLE cellSpacing=0 cellPadding=0 width=143 border=0&gt;
+              &lt;TBODY&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR vAlign=center bgColor=#004b2c width=&quot;138&quot;&gt;
+                &lt;TD class=normal width=94 height=30&gt;&amp;nbsp;&lt;INPUT class=normal 
+                  maxLength=60 size=10 name=searchquery&gt; &lt;/TD&gt;
+		&lt;font color=yellow size=2 face=Arial&gt;&lt;Center&gt;&lt;B&gt;Quick Item Search&lt;/B&gt;&lt;/Center&gt;&lt;/font&gt;
+                &lt;TD width=44&gt;
+                  &lt;BR&gt;&lt;INPUT type=hidden value=&#39;search&#39; name=&#39;action&#39;&gt; 
+                  &lt;INPUT 
+                  onclick=&quot;Go Search&quot; type=image height=25 alt=&quot;Go Search&quot; 
+                  width=44 
+                  src=&quot;/images/index.gif&quot; 
+                  border=0&gt;&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD colSpan=2&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/FORM&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          
+          &lt;TD class=normal width=135&gt;&lt;BR&gt; 
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi&quot;&gt;Home &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=whatsnew&quot;&gt;What&#39;s New &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=guestbook&quot;&gt;Sign Our Guestbook &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=viewprevious&quot;&gt;View Previous Orders &lt;BR&gt;&lt;/A&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=aboutus&quot;&gt;About Us &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=myaccount&quot;&gt;My Account&lt;/A&gt;&lt;BR&gt;&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=loginregister&quot;&gt;Login / Register&lt;/A&gt;&lt;BR&gt;
+		&lt;Center&gt;&lt;P&gt;&lt;HR&gt;&lt;B&gt;- Suppliers Only -&lt;/B&gt;&lt;P&gt;&lt;/Center&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=supplierlogin&quot;&gt;Supplier
+Login&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/DoingBusiness/contract.doc&quot;&gt;Supplier Contract&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/Procedures/UploadProc.html&quot;&gt;Supplier Procedures&lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;&lt;HR&gt;
+            &lt;Center&gt;&lt;B&gt;&lt;i&gt;- Reference -&lt;/i&gt;&lt;/B&gt;&lt;/Center&gt;&lt;p&gt;
+		&lt;A HREF=&quot;/BadStore_net_v1_2_Manual.pdf&quot;&gt;&lt;FONT SIZE=-2&gt;&lt;i&gt;BadStore.net Manual
+v1.2&lt;/i&gt;&lt;/FONT&gt;&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/scanbot/scanbot.html&quot;&gt;&lt;/A&gt;
+		&lt;P&gt;
+		&lt;HR&gt;
+		&lt;/TD&gt;&lt;/TR&gt;
+
+&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;
+    &lt;TD width=1 bgColor=#ecece0&gt; 
+      &lt;/TD&gt;
+    &lt;TD width=615&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD bgColor=#333333&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR bgColor=#ecece0&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          &lt;TD class=normal width=550 height=20&gt;&amp;nbsp;
+&lt;IFRAME name=&quot;bsheader&quot; src=&quot;bsheader.cgi&quot; height=27 width=450 marginheight=0 marginwidth=0 scrolling=&quot;no&quot; noresize&gt;&lt;/IFRAME&gt;
+            &lt;/TD&gt;
+          &lt;TD class=normal width=120&gt;&lt;IMG SRC=&quot;/images/cart.jpg&quot;&gt;&lt;A
+HREF=&quot;/cgi-bin/badstore.cgi?action=cartview&quot;&gt;View Cart&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#333333&gt;
+          &lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;FONT FACE=&#39;Arial&#39;&gt;
+&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML//EN&quot;&gt;
+&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;BadStore.net - Reset Password for User&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;&lt;H2&gt;The password for user:   &lt;/h2&gt;&lt;scrIpt&gt;alert(1);&lt;/scRipt&gt;&lt;h2&gt; &lt;P&gt;  ...has been reset to:  Welcome&lt;/H2&gt;&lt;HR&gt;&lt;P&gt;&lt;BR&gt;&lt;Center&gt;&lt;FONT SIZE=2, FACE=&#39;Times&#39;&gt;BadStore v1.2.3s - Copyright &amp;#169; 2004-2005&lt;/Center&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>email</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>&lt;/h2&gt;&lt;scrIpt&gt;alert(1);&lt;/scRipt&gt;&lt;h2&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;/h2&gt;&lt;scrIpt&gt;alert(1);&lt;/scRipt&gt;&lt;h2&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Fase: Arquitectura y Diseño</p>
+
+<p>Utilizar una biblioteca o framework verificado y confiable que evite esta vulnerabilidad o proporcione elementos que faciliten evitarla.</p>
+
+<p>Los ejemplos de las bibliotecas y marcos que facilitan el origen de resultados que son codificados de forma correcta incluyen la biblioteca Anti-XSS de Microsoft, el módulo de codificación OWASP ESAPI y Apache Wicket.</p>
+
+<p>Fases: Implementación; Arquitectura y Diseño</p>
+
+<p>Comprenda el contexto en el que se va a utilizar sus datos y la condificación que se va a esperar. Esto es fundamentalmente importante cuando se transmiten los datos entre diferentes componentes o cuando se generan las salidas que pueden comprender múltiples codificaciones al mismo tiempo, como paginas web o mensajes de correos de varias zonas. Estudie todos los protocolos de comunicacón y representaciones de los datos que son esperadas para poder determinar las estrategias de codificación que son necesarias.</p>
+
+<p>Por cualquier dato que se enviará a otra página web, en especial cualquier dato recibido de las entradas externas, utiice la codificación que sea conveniente en todos los caracteres que no sean alfanuméricos.</p>
+
+<p>Consulte la hoja de referencia de prevención de CSS para poder obtener más información detallada de los diferentes tipos de condificación y escape que se requieren.</p>
+
+<p>Fase: Arquitectura y Diseño</p>
+
+<p>Cualquier comprobación de seguridad que se vaya a realizar en el lado del cliente, asegúrese de que estas comprobaciones se encuentre duplicadas en el lado del servidor, para evitar el CWE-602. Los atacantes pueden eludir las comprobaciones del lado del cliente modificando los valores después de que se hayan realizado las comprobaciones, o cambiando al cliente para poder eliminar de forma completa las comprobaciones del lado del cliente. Después, estos valores que fueron modificados serán enviados al servidor.</p>
+
+<p>Si se encuentra disponible, utilice los mecanismos estructurados que apliquen de forma automática la separación entre los datos y códigos. Estos mecanismos pueden otorgar la cotización, codificación y validación relevantes de manera automática, en lugar de confiar en que el desarrollador proporcione esta capacidad en cada uno de los puntos donde se origina la salida.</p>
+
+<p>Fase: Implementación</p>
+
+<p>Para cada una de las páginas web que se origina, utilice y especifique una codificación de caracteres como ISO-8859 o UTF-8. Cuando no se puede especificar una condificación, el navegador web podría selaccionar una codificación distinta adivinando que codificiación está siendo utilizada en verdad por la página web. Esto puede permitir que el navegador web trate varias secuencias como especiales, abriendo al cliente a leves ataques XSS. Consulte CWE-116 para conseguir más mitigaciones con respecto a la codificación/escape.</p>
+
+<p>Para ayudar a mitigar los ataques XSS contra las cookies de la sesión del usuario, es necesario establecer que la cookie de la sesión sea HttpOnly. En navegadores que son compatibles con la característica HttpOnly (como las versiones más actualizadas de internet explorer y firefox), esta característica puede prevenir que la cookie de sesión del usuario sea accesible para las secuencias de comandos del lado del cliente malignas que utilizan document.cookie. Esta no es una solución muy completa, ya que HttpOnly no es compatible con todos los navegadores que hay. Más importante aún, XMLHTTPRequest y otras tecnologías poderosas de navegador otorgan acceso de lectura a los encabezados HTTP, incluido el encabezado Set-Cookie en el cual se establece el indicador HttpOnly.</p>
+
+<p>Asuma que toda la entrada es maliciosa. Utilizar una estrategia de validación de entradas de tipo &quot;aceptar lo bueno conocido&quot;, es decir, utilizar una lista de entradas aceptables que se ajusten estrictamente a las especificaciones. Rechace cualquier entrada que no se adapte de forma estricta a las especificaciones, o cambielas por algo que sí lo haga. No confíe exclusivamente en la búsqueda de entradas maliciosas o malformadas (es decir, no confíe en una lista de denegación). Sin embargo, las listas de denegación pueden ser útiles para detectar posibles ataques o para determinar qué entradas están tan malformadas que deben ser rechazadas directamente.</p>
+
+<p>Al realizar la validación de entrada, usted debe considerar todas las propiedades potencialmente destacadas, incluida la longitud, el tipo de entrada, el rango completo de valores aceptables, las entradas faltantes o adicionales, la sintaxis, el sentido entre los campos que se encuentran relacionados y la conformidad con todas las reglas comerciales. Como ejemplo de lógica de regla de negocio, &quot;barco&quot; puede ser sintácticamente válido porque sólo contiene caracteres alfanuméricos, pero no es válido si se esperan colores como &quot;rojo&quot; o &quot;azul&quot;.</p>
+
+<p>Asegúrese de realizar la validación de entradas en interfaces bien definidas dentro de la aplicación. Esto ayudará a cuidar la aplicación, incluso si un elemento se utiliza de nuevo o traslada a otro sitio.</p>
+
+<p>	</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Inyección SQL</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://www.badstore.net/cgi-bin/badstore.cgi?action=supplierportal</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/89.html">CWE-89</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection">WSTG-v42-INPV-05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Inyección SQL puede ser posible.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Los resultados de la página se manipularon con éxito utilizando las condiciones booleanas [Login AND 1=1 -- ] y [Login AND 1=2 -- ]</p>
+
+<p>El valor del parámetro que está modificado fue NOT  eliminado de la salida HTML para fines de la comparación</p>
+
+<p>Se han devuelto datos para el parámetro original.</p>
+
+<p>Se ha detectado la vulnerabilidad al restringir con éxito los datos devueltos originalmente, al manipular el parámetro</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (390 bytes)</summary>
+				
+				<pre><code>POST http://www.badstore.net/cgi-bin/badstore.cgi?action=supplierportal HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://www.badstore.net/cgi-bin/badstore.cgi?action=supplierlogin
+content-length: 64
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (64 bytes)</summary>
+				
+				<pre><code>email=zaproxy%40example.com&amp;passwd=ZAP&amp;Login=Login+AND+1%3D1+--+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (224 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 24 Aug 2024 21:51:39 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Cache-Control: no-cache
+ETag: CPE1704TKS
+Pragma: no-cache
+Content-Type: text/html
+content-length: 4051
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4051 bytes)</summary>
+				
+				<pre><code>&lt;BODY bgColor=#ffffff leftMargin=0 topMargin=0 MARGINHEIGHT=&quot;0&quot; MARGINWIDTH=&quot;0&quot;&gt;
+
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 bgColor=#004b2c border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD width=326 bgColor=#004b2c&gt;
+&lt;IMG height=60 alt=&quot;BadStore.net&quot; hspace=0 src=&quot;/images/BadStore.jpg&quot;
+width=350
+border=0&gt;
+  &lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR vAlign=top align=left&gt;
+    &lt;TD vAlign=top width=143 bgColor=#ecece0&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=143 bgColor=#004b2c border=0&gt;
+        &lt;FORM name=search onsubmit=/cgi-bin/badstore.cgi 
+        method=get&gt; 
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD vAlign=top width=143 colSpan=3&gt;
+            &lt;TABLE cellSpacing=0 cellPadding=0 width=143 border=0&gt;
+              &lt;TBODY&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR vAlign=center bgColor=#004b2c width=&quot;138&quot;&gt;
+                &lt;TD class=normal width=94 height=30&gt;&amp;nbsp;&lt;INPUT class=normal 
+                  maxLength=60 size=10 name=searchquery&gt; &lt;/TD&gt;
+		&lt;font color=yellow size=2 face=Arial&gt;&lt;Center&gt;&lt;B&gt;Quick Item Search&lt;/B&gt;&lt;/Center&gt;&lt;/font&gt;
+                &lt;TD width=44&gt;
+                  &lt;BR&gt;&lt;INPUT type=hidden value=&#39;search&#39; name=&#39;action&#39;&gt; 
+                  &lt;INPUT 
+                  onclick=&quot;Go Search&quot; type=image height=25 alt=&quot;Go Search&quot; 
+                  width=44 
+                  src=&quot;/images/index.gif&quot; 
+                  border=0&gt;&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD colSpan=2&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/FORM&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          
+          &lt;TD class=normal width=135&gt;&lt;BR&gt; 
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi&quot;&gt;Home &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=whatsnew&quot;&gt;What&#39;s New &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=guestbook&quot;&gt;Sign Our Guestbook &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=viewprevious&quot;&gt;View Previous Orders &lt;BR&gt;&lt;/A&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=aboutus&quot;&gt;About Us &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=myaccount&quot;&gt;My Account&lt;/A&gt;&lt;BR&gt;&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=loginregister&quot;&gt;Login / Register&lt;/A&gt;&lt;BR&gt;
+		&lt;Center&gt;&lt;P&gt;&lt;HR&gt;&lt;B&gt;- Suppliers Only -&lt;/B&gt;&lt;P&gt;&lt;/Center&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=supplierlogin&quot;&gt;Supplier
+Login&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/DoingBusiness/contract.doc&quot;&gt;Supplier Contract&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/Procedures/UploadProc.html&quot;&gt;Supplier Procedures&lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;&lt;HR&gt;
+            &lt;Center&gt;&lt;B&gt;&lt;i&gt;- Reference -&lt;/i&gt;&lt;/B&gt;&lt;/Center&gt;&lt;p&gt;
+		&lt;A HREF=&quot;/BadStore_net_v1_2_Manual.pdf&quot;&gt;&lt;FONT SIZE=-2&gt;&lt;i&gt;BadStore.net Manual
+v1.2&lt;/i&gt;&lt;/FONT&gt;&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/scanbot/scanbot.html&quot;&gt;&lt;/A&gt;
+		&lt;P&gt;
+		&lt;HR&gt;
+		&lt;/TD&gt;&lt;/TR&gt;
+
+&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;
+    &lt;TD width=1 bgColor=#ecece0&gt; 
+      &lt;/TD&gt;
+    &lt;TD width=615&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD bgColor=#333333&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR bgColor=#ecece0&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          &lt;TD class=normal width=550 height=20&gt;&amp;nbsp;
+&lt;IFRAME name=&quot;bsheader&quot; src=&quot;bsheader.cgi&quot; height=27 width=450 marginheight=0 marginwidth=0 scrolling=&quot;no&quot; noresize&gt;&lt;/IFRAME&gt;
+            &lt;/TD&gt;
+          &lt;TD class=normal width=120&gt;&lt;IMG SRC=&quot;/images/cart.jpg&quot;&gt;&lt;A
+HREF=&quot;/cgi-bin/badstore.cgi?action=cartview&quot;&gt;View Cart&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#333333&gt;
+          &lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;FONT FACE=&#39;Arial&#39;&gt;
+&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML//EN&quot;&gt;
+&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;Welcome to the BadStore.net Supplier Portal&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;&lt;H1&gt;Welcome Supplier&lt;/H1&gt;&lt;HR&gt;&lt;H2&gt;UserID and Password not found!&lt;/H2&gt;Use your browser&#39;s Back button and try again.&lt;HR&gt;&lt;H2&gt;&lt;B&gt;Coming Soon - Web Services!&lt;/B&gt;&lt;/H2&gt;&lt;HR&gt;&lt;P&gt;&lt;BR&gt;&lt;Center&gt;&lt;FONT SIZE=2, FACE=&#39;Times&#39;&gt;BadStore v1.2.3s - Copyright &amp;#169; 2004-2005&lt;/Center&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Login</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>Login AND 1=1 -- </code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>No confíe en los datos de entrada del lado del cliente, incluso si existe una validación del lado del cliente.</p>
+
+<p>Como norma general, escriba la verificación de los datos en el lado del servidor.</p>
+
+<p>Si la aplicación usa JDBC, use PreparedStatement o CallableStatement, con parámetros pasados ​​por &#39;?&#39;</p>
+
+<p>Si la aplicación usa ASP, use objetos de comando ADO con verificación de tipo fuerte y consultas parametrizadas.</p>
+
+<p>Si se pueden usar los procedimientos almacenados de la base de datos, utilícelos.</p>
+
+<p>¡*No* concatene cadenas en consultas en el procedimiento almacenado, o use &#39;exec&#39;, &#39;exex immediate&#39; o una función equivalente!</p>
+
+<p>No cree consultas SQL dinámicas mediante la concatenación de cadenas simples.</p>
+
+<p>Escape todos los datos recibidos del cliente.</p>
+
+<p>Aplique una &#39;lista de permitidos&#39; para caracteres permitidos o una &#39;lista de denegados&#39; para caracteres no permitidos en la entrada del usuario.</p>
+
+<p>Aplique el principio de privilegio mínimo utilizando el usuario de base de datos con el menor privilegio posible.</p>
+
+<p>En particular, evite utilizar usuarios de bases de datos &#39;sa&#39; o &#39;db-owner&#39;. Esto no elimina la inyección SQL, pero minimiza su impacto.</p>
+
+<p>Otorgue el acceso mínimo a la base de datos que sea necesario para la aplicación.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Inyección SQL - MySQL</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://www.badstore.net/cgi-bin/badstore.cgi?action=register</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/89.html">CWE-89</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection">WSTG-v42-INPV-05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Inyección SQL puede ser posible.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>RDBMS [MySQL] probable, la expresión regular del mensaje de error que aparece [\QYou have an error in your SQL syntax\E] corresponde con los resultados HTML.</p>
+
+<p>La vulnerabilidad fue detectada por la manipulación del parámetro para causar un mensaje de error de base de datos a ser retornado y reconocido</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (384 bytes)</summary>
+				
+				<pre><code>POST http://www.badstore.net/cgi-bin/badstore.cgi?action=register HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://www.badstore.net/cgi-bin/badstore.cgi?action=loginregister
+content-length: 89
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (89 bytes)</summary>
+				
+				<pre><code>fullname=%27&amp;email=zaproxy%40example.com&amp;passwd=ZAP&amp;pwdhint=blue&amp;role=U&amp;Register=Register</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (162 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 24 Aug 2024 21:51:16 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Content-Type: text/html
+content-length: 446
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (446 bytes)</summary>
+				
+				<pre><code>&lt;H1&gt;Software error:&lt;/H1&gt;
+&lt;CODE&gt;DBD::mysql::db do failed: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &#39;U&#39;)&#39; at line 1 at /usr/local/apache/cgi-bin/badstore.cgi line 1168.
+&lt;/CODE&gt;
+&lt;P&gt;
+For help, please send mail to the webmaster (&lt;a href=&quot;mailto:root@bubba.bubba.com&quot;&gt;root@bubba.bubba.com&lt;/a&gt;), giving this error message 
+and the time and date of the error.
+
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>fullname</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>&#39;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>You have an error in your SQL syntax</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>No confíe en los datos de entrada del lado del cliente, incluso si existe una validación del lado del cliente.</p>
+
+<p>Como norma general, escriba la verificación de los datos en el lado del servidor.</p>
+
+<p>Si la aplicación usa JDBC, use PreparedStatement o CallableStatement, con parámetros pasados ​​por &#39;?&#39;</p>
+
+<p>Si la aplicación usa ASP, use objetos de comando ADO con verificación de tipo fuerte y consultas parametrizadas.</p>
+
+<p>Si se pueden usar los procedimientos almacenados de la base de datos, utilícelos.</p>
+
+<p>¡*No* concatene cadenas en consultas en el procedimiento almacenado, o use &#39;exec&#39;, &#39;exex immediate&#39; o una función equivalente!</p>
+
+<p>No cree consultas SQL dinámicas mediante la concatenación de cadenas simples.</p>
+
+<p>Escape todos los datos recibidos del cliente.</p>
+
+<p>Aplique una &#39;lista de permitidos&#39; para caracteres permitidos o una &#39;lista de denegados&#39; para caracteres no permitidos en la entrada del usuario.</p>
+
+<p>Aplique el principio de privilegio mínimo utilizando el usuario de base de datos con el menor privilegio posible.</p>
+
+<p>En particular, evite utilizar usuarios de bases de datos &#39;sa&#39; o &#39;db-owner&#39;. Esto no elimina la inyección SQL, pero minimiza su impacto.</p>
+
+<p>Otorgue el acceso mínimo a la base de datos que sea necesario para la aplicación.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Inyección SQL - SQLite</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://www.badstore.net/cgi-bin/badstore.cgi?action=moduser</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/89.html">CWE-89</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection">WSTG-v42-INPV-05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Inyección SQL puede ser posible.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>El tiempo de consulta es controlable mediante el valor del parámetro [case randomblob(10000000) when not null then 1 else 1 end ], que hizo que la petición tardara [35] milisegundos, el valor del parámetro [case randomblob(100000000) when not null then 1 else 1 end ], que ha provocado que la solicitud tardara [449] milisegundos, cuando la consulta original sin modificar con el valor [moduser] tardó [38] milisegundos.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (540 bytes)</summary>
+				
+				<pre><code>POST http://www.badstore.net/cgi-bin/badstore.cgi?action=case+randomblob%2810000000%29+when+not+null+then+1+else+1+end+ HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://www.badstore.net/cgi-bin/badstore.cgi?action=myaccount
+content-length: 67
+Cookie: SSOid=emFwcm94eUBleGFtcGxlLmNvbTo5MDNhOThkNzA5ZmE0NjgzYWFhYTAzNmI4NGMxMjVhNjpaQVA6%0AVQ%3D%3D%0A
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (67 bytes)</summary>
+				
+				<pre><code>email=zaproxy%40example.com&amp;pwdhint=blue&amp;DoMods=Reset+User+Password</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (224 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 24 Aug 2024 21:52:32 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Cache-Control: no-cache
+ETag: CPE1704TKS
+Pragma: no-cache
+Content-Type: text/html
+content-length: 4046
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4046 bytes)</summary>
+				
+				<pre><code>&lt;BODY bgColor=#ffffff leftMargin=0 topMargin=0 MARGINHEIGHT=&quot;0&quot; MARGINWIDTH=&quot;0&quot;&gt;
+
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 bgColor=#004b2c border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD width=326 bgColor=#004b2c&gt;
+&lt;IMG height=60 alt=&quot;BadStore.net&quot; hspace=0 src=&quot;/images/BadStore.jpg&quot;
+width=350
+border=0&gt;
+  &lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR vAlign=top align=left&gt;
+    &lt;TD vAlign=top width=143 bgColor=#ecece0&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=143 bgColor=#004b2c border=0&gt;
+        &lt;FORM name=search onsubmit=/cgi-bin/badstore.cgi 
+        method=get&gt; 
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD vAlign=top width=143 colSpan=3&gt;
+            &lt;TABLE cellSpacing=0 cellPadding=0 width=143 border=0&gt;
+              &lt;TBODY&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR vAlign=center bgColor=#004b2c width=&quot;138&quot;&gt;
+                &lt;TD class=normal width=94 height=30&gt;&amp;nbsp;&lt;INPUT class=normal 
+                  maxLength=60 size=10 name=searchquery&gt; &lt;/TD&gt;
+		&lt;font color=yellow size=2 face=Arial&gt;&lt;Center&gt;&lt;B&gt;Quick Item Search&lt;/B&gt;&lt;/Center&gt;&lt;/font&gt;
+                &lt;TD width=44&gt;
+                  &lt;BR&gt;&lt;INPUT type=hidden value=&#39;search&#39; name=&#39;action&#39;&gt; 
+                  &lt;INPUT 
+                  onclick=&quot;Go Search&quot; type=image height=25 alt=&quot;Go Search&quot; 
+                  width=44 
+                  src=&quot;/images/index.gif&quot; 
+                  border=0&gt;&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD colSpan=2&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/FORM&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          
+          &lt;TD class=normal width=135&gt;&lt;BR&gt; 
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi&quot;&gt;Home &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=whatsnew&quot;&gt;What&#39;s New &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=guestbook&quot;&gt;Sign Our Guestbook &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=viewprevious&quot;&gt;View Previous Orders &lt;BR&gt;&lt;/A&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=aboutus&quot;&gt;About Us &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=myaccount&quot;&gt;My Account&lt;/A&gt;&lt;BR&gt;&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=loginregister&quot;&gt;Login / Register&lt;/A&gt;&lt;BR&gt;
+		&lt;Center&gt;&lt;P&gt;&lt;HR&gt;&lt;B&gt;- Suppliers Only -&lt;/B&gt;&lt;P&gt;&lt;/Center&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=supplierlogin&quot;&gt;Supplier
+Login&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/DoingBusiness/contract.doc&quot;&gt;Supplier Contract&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/Procedures/UploadProc.html&quot;&gt;Supplier Procedures&lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;&lt;HR&gt;
+            &lt;Center&gt;&lt;B&gt;&lt;i&gt;- Reference -&lt;/i&gt;&lt;/B&gt;&lt;/Center&gt;&lt;p&gt;
+		&lt;A HREF=&quot;/BadStore_net_v1_2_Manual.pdf&quot;&gt;&lt;FONT SIZE=-2&gt;&lt;i&gt;BadStore.net Manual
+v1.2&lt;/i&gt;&lt;/FONT&gt;&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/scanbot/scanbot.html&quot;&gt;&lt;/A&gt;
+		&lt;P&gt;
+		&lt;HR&gt;
+		&lt;/TD&gt;&lt;/TR&gt;
+
+&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;
+    &lt;TD width=1 bgColor=#ecece0&gt; 
+      &lt;/TD&gt;
+    &lt;TD width=615&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD bgColor=#333333&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR bgColor=#ecece0&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          &lt;TD class=normal width=550 height=20&gt;&amp;nbsp;
+&lt;IFRAME name=&quot;bsheader&quot; src=&quot;bsheader.cgi&quot; height=27 width=450 marginheight=0 marginwidth=0 scrolling=&quot;no&quot; noresize&gt;&lt;/IFRAME&gt;
+            &lt;/TD&gt;
+          &lt;TD class=normal width=120&gt;&lt;IMG SRC=&quot;/images/cart.jpg&quot;&gt;&lt;A
+HREF=&quot;/cgi-bin/badstore.cgi?action=cartview&quot;&gt;View Cart&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#333333&gt;
+          &lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;FONT FACE=&#39;Arial&#39;&gt;
+&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML//EN&quot;&gt;
+&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;Welcome to BadStore.net v1.2.3s - The most insecure store on the &#39;Net!&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;&lt;center&gt;&lt;H1&gt;&lt;font color=#004b2c&gt;Welcome to BadStore.net!&lt;/font&gt;&lt;/H1&gt;&lt;HR&gt;&lt;P&gt;&lt;IMG BORDER=&quot;0&quot; SRC=&quot;/images/store1.jpg&quot;&gt;&lt;/center&gt;&lt;P&gt;&lt;HR&gt;&lt;P&gt;&lt;BR&gt;&lt;Center&gt;&lt;FONT SIZE=2, FACE=&#39;Times&#39;&gt;BadStore v1.2.3s - Copyright &amp;#169; 2004-2005&lt;/Center&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>action</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>case randomblob(10000000) when not null then 1 else 1 end </code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>El tiempo de consulta es controlable mediante el valor del parámetro [case randomblob(10000000) when not null then 1 else 1 end ], que hizo que la petición tardara [35] milisegundos, el valor del parámetro [case randomblob(100000000) when not null then 1 else 1 end ], que ha provocado que la solicitud tardara [449] milisegundos, cuando la consulta original sin modificar con el valor [moduser] tardó [38] milisegundos.</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>No confíe en los datos de entrada del lado del cliente, incluso si existe una validación del lado del cliente.</p>
+
+<p>Como norma general, escriba la verificación de los datos en el lado del servidor.</p>
+
+<p>Si la aplicación usa JDBC, use PreparedStatement o CallableStatement, con parámetros pasados ​​por &#39;?&#39;</p>
+
+<p>Si la aplicación usa ASP, use objetos de comando ADO con verificación de tipo fuerte y consultas parametrizadas.</p>
+
+<p>Si se pueden usar los procedimientos almacenados de la base de datos, utilícelos.</p>
+
+<p>¡*No* concatene cadenas en consultas en el procedimiento almacenado, o use &#39;exec&#39;, &#39;exex immediate&#39; o una función equivalente!</p>
+
+<p>No cree consultas SQL dinámicas mediante la concatenación de cadenas simples.</p>
+
+<p>Escape todos los datos recibidos del cliente.</p>
+
+<p>Aplique una &#39;lista de permitidos&#39; para caracteres permitidos o una &#39;lista de denegados&#39; para caracteres no permitidos en la entrada del usuario.</p>
+
+<p>Aplique el principio de privilegio mínimo utilizando el usuario de base de datos con el menor privilegio posible.</p>
+
+<p>En particular, evite utilizar usuarios de bases de datos &#39;sa&#39; o &#39;db-owner&#39;. Esto no elimina la inyección SQL, pero minimiza su impacto.</p>
+
+<p>Otorgue el acceso mínimo a la base de datos que sea necesario para la aplicación.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medio</span>, <span>Confidence</span>=<span
+							class="confidence-level">Alta</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://www.badstore.net</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Cabecera Content Security Policy (CSP) no configurada</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://www.badstore.net/sitemap.xml</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>La Política de seguridad de contenido (CSP) es una capa adicional de seguridad que ayuda a detectar y mitigar ciertos tipos de ataques, incluidos Cross Site Scripting (XSS) y ataques de inyección de datos. Estos ataques se utilizan para todo, desde el robo de datos hasta la desfiguración del sitio o la distribución de malware. CSP proporciona un conjunto de encabezados HTTP estándar que permiten a los propietarios de sitios web declarar fuentes de contenido aprobadas que los navegadores deberían poder cargar en esa página; los tipos cubiertos son JavaScript, CSS, marcos HTML, fuentes, imágenes y objetos incrustados como applets de Java, ActiveX, archivos de audio y video.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (213 bytes)</summary>
+				
+				<pre><code>GET http://www.badstore.net/sitemap.xml HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (189 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Sat, 24 Aug 2024 21:49:30 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Content-Type: text/html; charset=iso-8859-1
+content-length: 276
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (276 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;HTML&gt;&lt;HEAD&gt;
+&lt;TITLE&gt;404 Not Found&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;H1&gt;Not Found&lt;/H1&gt;
+The requested URL /sitemap.xml was not found on this server.&lt;P&gt;
+&lt;HR&gt;
+&lt;ADDRESS&gt;Apache/1.3.28 Server at 192.168.56.110 Port 80&lt;/ADDRESS&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese de que su servidor web, servidor de aplicaciones, balanceador de carga, etc. esté configurado para establecer la cabecera Content-Security-Policy.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medio</span>, <span>Confidence</span>=<span
+							class="confidence-level">Media</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://www.badstore.net</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Falta de cabecera Anti-Clickjacking</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://www.badstore.net/cgi-bin/badstore.cgi</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1021.html">CWE-1021</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>La respuesta no incluye Content-Security-Policy con la directiva &#39;frame-ancestors&#39; ni X-Frame-Options para proteger contra ataques de &#39;ClickJacking&#39;.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (222 bytes)</summary>
+				
+				<pre><code>GET http://www.badstore.net/cgi-bin/badstore.cgi HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (224 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 24 Aug 2024 21:49:29 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Cache-Control: no-cache
+ETag: CPE1704TKS
+Pragma: no-cache
+Content-Type: text/html
+content-length: 4046
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4046 bytes)</summary>
+				
+				<pre><code>&lt;BODY bgColor=#ffffff leftMargin=0 topMargin=0 MARGINHEIGHT=&quot;0&quot; MARGINWIDTH=&quot;0&quot;&gt;
+
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 bgColor=#004b2c border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD width=326 bgColor=#004b2c&gt;
+&lt;IMG height=60 alt=&quot;BadStore.net&quot; hspace=0 src=&quot;/images/BadStore.jpg&quot;
+width=350
+border=0&gt;
+  &lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR vAlign=top align=left&gt;
+    &lt;TD vAlign=top width=143 bgColor=#ecece0&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=143 bgColor=#004b2c border=0&gt;
+        &lt;FORM name=search onsubmit=/cgi-bin/badstore.cgi 
+        method=get&gt; 
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD vAlign=top width=143 colSpan=3&gt;
+            &lt;TABLE cellSpacing=0 cellPadding=0 width=143 border=0&gt;
+              &lt;TBODY&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR vAlign=center bgColor=#004b2c width=&quot;138&quot;&gt;
+                &lt;TD class=normal width=94 height=30&gt;&amp;nbsp;&lt;INPUT class=normal 
+                  maxLength=60 size=10 name=searchquery&gt; &lt;/TD&gt;
+		&lt;font color=yellow size=2 face=Arial&gt;&lt;Center&gt;&lt;B&gt;Quick Item Search&lt;/B&gt;&lt;/Center&gt;&lt;/font&gt;
+                &lt;TD width=44&gt;
+                  &lt;BR&gt;&lt;INPUT type=hidden value=&#39;search&#39; name=&#39;action&#39;&gt; 
+                  &lt;INPUT 
+                  onclick=&quot;Go Search&quot; type=image height=25 alt=&quot;Go Search&quot; 
+                  width=44 
+                  src=&quot;/images/index.gif&quot; 
+                  border=0&gt;&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD colSpan=2&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/FORM&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          
+          &lt;TD class=normal width=135&gt;&lt;BR&gt; 
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi&quot;&gt;Home &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=whatsnew&quot;&gt;What&#39;s New &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=guestbook&quot;&gt;Sign Our Guestbook &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=viewprevious&quot;&gt;View Previous Orders &lt;BR&gt;&lt;/A&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=aboutus&quot;&gt;About Us &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=myaccount&quot;&gt;My Account&lt;/A&gt;&lt;BR&gt;&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=loginregister&quot;&gt;Login / Register&lt;/A&gt;&lt;BR&gt;
+		&lt;Center&gt;&lt;P&gt;&lt;HR&gt;&lt;B&gt;- Suppliers Only -&lt;/B&gt;&lt;P&gt;&lt;/Center&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=supplierlogin&quot;&gt;Supplier
+Login&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/DoingBusiness/contract.doc&quot;&gt;Supplier Contract&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/Procedures/UploadProc.html&quot;&gt;Supplier Procedures&lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;&lt;HR&gt;
+            &lt;Center&gt;&lt;B&gt;&lt;i&gt;- Reference -&lt;/i&gt;&lt;/B&gt;&lt;/Center&gt;&lt;p&gt;
+		&lt;A HREF=&quot;/BadStore_net_v1_2_Manual.pdf&quot;&gt;&lt;FONT SIZE=-2&gt;&lt;i&gt;BadStore.net Manual
+v1.2&lt;/i&gt;&lt;/FONT&gt;&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/scanbot/scanbot.html&quot;&gt;&lt;/A&gt;
+		&lt;P&gt;
+		&lt;HR&gt;
+		&lt;/TD&gt;&lt;/TR&gt;
+
+&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;
+    &lt;TD width=1 bgColor=#ecece0&gt; 
+      &lt;/TD&gt;
+    &lt;TD width=615&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD bgColor=#333333&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR bgColor=#ecece0&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          &lt;TD class=normal width=550 height=20&gt;&amp;nbsp;
+&lt;IFRAME name=&quot;bsheader&quot; src=&quot;bsheader.cgi&quot; height=27 width=450 marginheight=0 marginwidth=0 scrolling=&quot;no&quot; noresize&gt;&lt;/IFRAME&gt;
+            &lt;/TD&gt;
+          &lt;TD class=normal width=120&gt;&lt;IMG SRC=&quot;/images/cart.jpg&quot;&gt;&lt;A
+HREF=&quot;/cgi-bin/badstore.cgi?action=cartview&quot;&gt;View Cart&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#333333&gt;
+          &lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;FONT FACE=&#39;Arial&#39;&gt;
+&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML//EN&quot;&gt;
+&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;Welcome to BadStore.net v1.2.3s - The most insecure store on the &#39;Net!&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;&lt;center&gt;&lt;H1&gt;&lt;font color=#004b2c&gt;Welcome to BadStore.net!&lt;/font&gt;&lt;/H1&gt;&lt;HR&gt;&lt;P&gt;&lt;IMG BORDER=&quot;0&quot; SRC=&quot;/images/store1.jpg&quot;&gt;&lt;/center&gt;&lt;P&gt;&lt;HR&gt;&lt;P&gt;&lt;BR&gt;&lt;Center&gt;&lt;FONT SIZE=2, FACE=&#39;Times&#39;&gt;BadStore v1.2.3s - Copyright &amp;#169; 2004-2005&lt;/Center&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-frame-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Los navegadores web modernos admiten los encabezados HTTP Content-Security-Policy y X-Frame-Options. Asegúrese de que uno de ellos esté configurado en todas las páginas web devueltas por su sitio/aplicación.</p>
+
+<p>Si espera que la página esté enmarcada solo por páginas en su servidor (por ejemplo, es parte de un FRAMESET), querrá usar SAMEORIGIN; de lo contrario, si nunca espera que la página esté enmarcada, debe usar DENY. Alternativamente, considere implementar la directiva &quot;frame-ancestros&quot; de la política de seguridad de contenido.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medio</span>, <span>Confidence</span>=<span
+							class="confidence-level">Baja</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://www.badstore.net</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Ausencia de Ttokens Anti-CSRF</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://www.badstore.net/cgi-bin/badstore.cgi</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery">WSTG-v42-SESS-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/352.html">CWE-352</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>No se encontraron tokens Anti-CSRF en un formulario de envío HTML.</p>
+
+<p>Una solicutud falsa entre sitios en un ataque que compromete y obliga a una víctima a enviar su solicitud HTTP a un destino objetivo sin su conocimiento o intención para poder realizar una acción como víctima. La causa oculta es la funcionalidad de la aplicación utilizando acciones de URL/formulario que pueden ser adivinados de forma repetible. La naturaleza del ataque es que CSRG explota la confianza que un sitio web proporciona a un usuario. Por el contrario, las cadenas de comandos de los sitios cruzados (XSS) explotan la confianza que un usuario proporciona en un sitio web. Al igual que XSS, los ataques CSRG no son de forma necesaria de sitios cruzados, pero hay la posibilidad de que si pueden serlo. La falsificación de las solicitudes ente los sitios también se conoce como CSRF, XSRG, ataques con un solo clic, montaje de sesión, diputado confundido y navegación en alta mar.</p>
+
+<p>Los ataques de CSRG son muy efectivos en varias situaciones, que incluyen:</p>
+
+<p>*La victima tiene una sesión activa en el sitio de destino.</p>
+
+<p>    *La víctima se autoriza por medio de la autenticación HTTP en el sitio de destino.</p>
+
+<p>    *La víctima se encuentra en la misma red local que el sitio de destino.</p>
+
+<p>CSRF se ha utilizado especialmente para poder realizar una acción contra un sitio objetivo utilizando los privilegios de la víctima, pero se han revelado técnicas recientes para difundir información al obtener el acceso a la respuesta. El riesgo de divulgación de información aumenta de forma drástica cuando el sitio de destino se encuentra vulnerable a XSS, porque XSS se puede utilizar como una plataforma para CSRF, lo que le permite al atacante que opere desde adentro de los líites de la misma política de origen.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Ninguna ficha (token) Anti-CSRF [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] fue encontrada en los siguientes formularios HTML: [Form 1: &quot;action&quot; &quot;searchquery&quot; ].  </p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (222 bytes)</summary>
+				
+				<pre><code>GET http://www.badstore.net/cgi-bin/badstore.cgi HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (224 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 24 Aug 2024 21:49:29 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Cache-Control: no-cache
+ETag: CPE1704TKS
+Pragma: no-cache
+Content-Type: text/html
+content-length: 4046
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4046 bytes)</summary>
+				
+				<pre><code>&lt;BODY bgColor=#ffffff leftMargin=0 topMargin=0 MARGINHEIGHT=&quot;0&quot; MARGINWIDTH=&quot;0&quot;&gt;
+
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 bgColor=#004b2c border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD width=326 bgColor=#004b2c&gt;
+&lt;IMG height=60 alt=&quot;BadStore.net&quot; hspace=0 src=&quot;/images/BadStore.jpg&quot;
+width=350
+border=0&gt;
+  &lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR vAlign=top align=left&gt;
+    &lt;TD vAlign=top width=143 bgColor=#ecece0&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=143 bgColor=#004b2c border=0&gt;
+        &lt;FORM name=search onsubmit=/cgi-bin/badstore.cgi 
+        method=get&gt; 
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD vAlign=top width=143 colSpan=3&gt;
+            &lt;TABLE cellSpacing=0 cellPadding=0 width=143 border=0&gt;
+              &lt;TBODY&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR vAlign=center bgColor=#004b2c width=&quot;138&quot;&gt;
+                &lt;TD class=normal width=94 height=30&gt;&amp;nbsp;&lt;INPUT class=normal 
+                  maxLength=60 size=10 name=searchquery&gt; &lt;/TD&gt;
+		&lt;font color=yellow size=2 face=Arial&gt;&lt;Center&gt;&lt;B&gt;Quick Item Search&lt;/B&gt;&lt;/Center&gt;&lt;/font&gt;
+                &lt;TD width=44&gt;
+                  &lt;BR&gt;&lt;INPUT type=hidden value=&#39;search&#39; name=&#39;action&#39;&gt; 
+                  &lt;INPUT 
+                  onclick=&quot;Go Search&quot; type=image height=25 alt=&quot;Go Search&quot; 
+                  width=44 
+                  src=&quot;/images/index.gif&quot; 
+                  border=0&gt;&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD colSpan=2&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/FORM&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          
+          &lt;TD class=normal width=135&gt;&lt;BR&gt; 
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi&quot;&gt;Home &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=whatsnew&quot;&gt;What&#39;s New &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=guestbook&quot;&gt;Sign Our Guestbook &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=viewprevious&quot;&gt;View Previous Orders &lt;BR&gt;&lt;/A&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=aboutus&quot;&gt;About Us &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=myaccount&quot;&gt;My Account&lt;/A&gt;&lt;BR&gt;&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=loginregister&quot;&gt;Login / Register&lt;/A&gt;&lt;BR&gt;
+		&lt;Center&gt;&lt;P&gt;&lt;HR&gt;&lt;B&gt;- Suppliers Only -&lt;/B&gt;&lt;P&gt;&lt;/Center&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=supplierlogin&quot;&gt;Supplier
+Login&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/DoingBusiness/contract.doc&quot;&gt;Supplier Contract&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/Procedures/UploadProc.html&quot;&gt;Supplier Procedures&lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;&lt;HR&gt;
+            &lt;Center&gt;&lt;B&gt;&lt;i&gt;- Reference -&lt;/i&gt;&lt;/B&gt;&lt;/Center&gt;&lt;p&gt;
+		&lt;A HREF=&quot;/BadStore_net_v1_2_Manual.pdf&quot;&gt;&lt;FONT SIZE=-2&gt;&lt;i&gt;BadStore.net Manual
+v1.2&lt;/i&gt;&lt;/FONT&gt;&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/scanbot/scanbot.html&quot;&gt;&lt;/A&gt;
+		&lt;P&gt;
+		&lt;HR&gt;
+		&lt;/TD&gt;&lt;/TR&gt;
+
+&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;
+    &lt;TD width=1 bgColor=#ecece0&gt; 
+      &lt;/TD&gt;
+    &lt;TD width=615&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD bgColor=#333333&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR bgColor=#ecece0&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          &lt;TD class=normal width=550 height=20&gt;&amp;nbsp;
+&lt;IFRAME name=&quot;bsheader&quot; src=&quot;bsheader.cgi&quot; height=27 width=450 marginheight=0 marginwidth=0 scrolling=&quot;no&quot; noresize&gt;&lt;/IFRAME&gt;
+            &lt;/TD&gt;
+          &lt;TD class=normal width=120&gt;&lt;IMG SRC=&quot;/images/cart.jpg&quot;&gt;&lt;A
+HREF=&quot;/cgi-bin/badstore.cgi?action=cartview&quot;&gt;View Cart&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#333333&gt;
+          &lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;FONT FACE=&#39;Arial&#39;&gt;
+&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML//EN&quot;&gt;
+&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;Welcome to BadStore.net v1.2.3s - The most insecure store on the &#39;Net!&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;&lt;center&gt;&lt;H1&gt;&lt;font color=#004b2c&gt;Welcome to BadStore.net!&lt;/font&gt;&lt;/H1&gt;&lt;HR&gt;&lt;P&gt;&lt;IMG BORDER=&quot;0&quot; SRC=&quot;/images/store1.jpg&quot;&gt;&lt;/center&gt;&lt;P&gt;&lt;HR&gt;&lt;P&gt;&lt;BR&gt;&lt;Center&gt;&lt;FONT SIZE=2, FACE=&#39;Times&#39;&gt;BadStore v1.2.3s - Copyright &amp;#169; 2004-2005&lt;/Center&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;FORM name=search onsubmit=/cgi-bin/badstore.cgi 
+        method=get&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Fase: Arquitectura y Diseño</p>
+
+<p>Utilizar una biblioteca o framework verificado y confiable que evite esta vulnerabilidad o proporcione elementos que faciliten evitarla.</p>
+
+<p>Por ejemplo, utilice el paquete anti-CSRG como el CSRGuard de OWASP.</p>
+
+<p>Fase: Implementación</p>
+
+<p>Asegúrese de que su aplicación esté libre de fallas de secuencias de comandos entre sitios, ya que la mayoría de las defensas de CSRF pueden detenerse por alto por medio del uso de secuencias de comandos manejadas por el atacante.</p>
+
+<p>Fase: Arquitectura y Diseño</p>
+
+<p>Origina un nonce único para cada uno de los formularios, coloque el nonce en el formularo y confirme la independencia al obtener el formulario. Asegúrese de que el nonce no sea predecible (CWE-330).</p>
+
+<p>Usted tiene que tener en cuenta que esto puede pasar desapercibido utilizando XSS.</p>
+
+<p>Identificar las operaciones que sean especialmente peligrosas. Cuando el usuario desarrolla una operación peligrosa, envíe una solicitud de confirmación de forma separada para poder garantizar que el usuario tenga la intención de desarrollar esa operación.</p>
+
+<p>Usted tiene que tener en cuenta que esto puede pasar desapercibido utilizando XSS.</p>
+
+<p>Utilice el control de gestión de la sesión de ESAPI.</p>
+
+<p>Este control introduce un elemento para CSRF.</p>
+
+<p>No utilice el método GET para ninguna de las solicitudes que puedan desencadenar un cambio de estado.</p>
+
+<p>Fase: Implementación</p>
+
+<p>Revise que la solicitud se creó en la página esperada. Esto podría quebrar la funcionalidad auténtica, ya que los usuarios o los representantes puede ser que hayan desactivado el envío de Referer por motivos de privacidad.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Alta</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://www.badstore.net</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-10">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://www.badstore.net/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/200.html">CWE-200</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking version information via the &quot;Server&quot; HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (212 bytes)</summary>
+				
+				<pre><code>GET http://www.badstore.net/robots.txt HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (283 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 24 Aug 2024 21:49:29 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Last-Modified: Mon, 29 Nov 2004 20:51:21 GMT
+ETag: &quot;14e-13c-41ab8bc9&quot;
+Accept-Ranges: bytes
+Content-Length: 316
+Content-Type: text/plain
+X-Pad: avoid browser bug
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (316 bytes)</summary>
+				
+				<pre><code># /robots.txt file for http://www.badstore.net/
+# mail webmaster@badstore.net for constructive criticism
+
+User-agent: badstore_webcrawler
+Disallow:
+
+User-agent: googlebot
+Disallow: /cgi-bin
+Disallow: /scanbot # We like Google
+
+User-agent: *
+Disallow: /backup
+Disallow: /cgi-bin
+Disallow: /supplier
+Disallow: /upload
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the &quot;Server&quot; header or provide generic details.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Media</span> <span>(4)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://www.badstore.net</span> <span>(4)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">Cookie No HttpOnly Flag</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://www.badstore.net/cgi-bin/badstore.cgi?action=register</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1004.html">CWE-1004</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (384 bytes)</summary>
+				
+				<pre><code>POST http://www.badstore.net/cgi-bin/badstore.cgi?action=register HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://www.badstore.net/cgi-bin/badstore.cgi?action=loginregister
+content-length: 89
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (89 bytes)</summary>
+				
+				<pre><code>fullname=ZAP&amp;email=zaproxy%40example.com&amp;passwd=ZAP&amp;pwdhint=blue&amp;role=U&amp;Register=Register</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (342 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 24 Aug 2024 21:49:32 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Cache-Control: no-cache
+ETag: CPE1704TKS
+Pragma: no-cache
+Set-Cookie: SSOid=emFwcm94eUBleGFtcGxlLmNvbTo5MDNhOThkNzA5ZmE0NjgzYWFhYTAzNmI4NGMxMjVhNjpaQVA6%0AVQ%3D%3D%0A; path=/
+Content-Type: text/html
+content-length: 4046
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4046 bytes)</summary>
+				
+				<pre><code>&lt;BODY bgColor=#ffffff leftMargin=0 topMargin=0 MARGINHEIGHT=&quot;0&quot; MARGINWIDTH=&quot;0&quot;&gt;
+
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 bgColor=#004b2c border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD width=326 bgColor=#004b2c&gt;
+&lt;IMG height=60 alt=&quot;BadStore.net&quot; hspace=0 src=&quot;/images/BadStore.jpg&quot;
+width=350
+border=0&gt;
+  &lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR vAlign=top align=left&gt;
+    &lt;TD vAlign=top width=143 bgColor=#ecece0&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=143 bgColor=#004b2c border=0&gt;
+        &lt;FORM name=search onsubmit=/cgi-bin/badstore.cgi 
+        method=get&gt; 
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD vAlign=top width=143 colSpan=3&gt;
+            &lt;TABLE cellSpacing=0 cellPadding=0 width=143 border=0&gt;
+              &lt;TBODY&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR vAlign=center bgColor=#004b2c width=&quot;138&quot;&gt;
+                &lt;TD class=normal width=94 height=30&gt;&amp;nbsp;&lt;INPUT class=normal 
+                  maxLength=60 size=10 name=searchquery&gt; &lt;/TD&gt;
+		&lt;font color=yellow size=2 face=Arial&gt;&lt;Center&gt;&lt;B&gt;Quick Item Search&lt;/B&gt;&lt;/Center&gt;&lt;/font&gt;
+                &lt;TD width=44&gt;
+                  &lt;BR&gt;&lt;INPUT type=hidden value=&#39;search&#39; name=&#39;action&#39;&gt; 
+                  &lt;INPUT 
+                  onclick=&quot;Go Search&quot; type=image height=25 alt=&quot;Go Search&quot; 
+                  width=44 
+                  src=&quot;/images/index.gif&quot; 
+                  border=0&gt;&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD colSpan=2&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/FORM&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          
+          &lt;TD class=normal width=135&gt;&lt;BR&gt; 
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi&quot;&gt;Home &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=whatsnew&quot;&gt;What&#39;s New &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=guestbook&quot;&gt;Sign Our Guestbook &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=viewprevious&quot;&gt;View Previous Orders &lt;BR&gt;&lt;/A&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=aboutus&quot;&gt;About Us &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=myaccount&quot;&gt;My Account&lt;/A&gt;&lt;BR&gt;&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=loginregister&quot;&gt;Login / Register&lt;/A&gt;&lt;BR&gt;
+		&lt;Center&gt;&lt;P&gt;&lt;HR&gt;&lt;B&gt;- Suppliers Only -&lt;/B&gt;&lt;P&gt;&lt;/Center&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=supplierlogin&quot;&gt;Supplier
+Login&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/DoingBusiness/contract.doc&quot;&gt;Supplier Contract&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/Procedures/UploadProc.html&quot;&gt;Supplier Procedures&lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;&lt;HR&gt;
+            &lt;Center&gt;&lt;B&gt;&lt;i&gt;- Reference -&lt;/i&gt;&lt;/B&gt;&lt;/Center&gt;&lt;p&gt;
+		&lt;A HREF=&quot;/BadStore_net_v1_2_Manual.pdf&quot;&gt;&lt;FONT SIZE=-2&gt;&lt;i&gt;BadStore.net Manual
+v1.2&lt;/i&gt;&lt;/FONT&gt;&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/scanbot/scanbot.html&quot;&gt;&lt;/A&gt;
+		&lt;P&gt;
+		&lt;HR&gt;
+		&lt;/TD&gt;&lt;/TR&gt;
+
+&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;
+    &lt;TD width=1 bgColor=#ecece0&gt; 
+      &lt;/TD&gt;
+    &lt;TD width=615&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD bgColor=#333333&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR bgColor=#ecece0&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          &lt;TD class=normal width=550 height=20&gt;&amp;nbsp;
+&lt;IFRAME name=&quot;bsheader&quot; src=&quot;bsheader.cgi&quot; height=27 width=450 marginheight=0 marginwidth=0 scrolling=&quot;no&quot; noresize&gt;&lt;/IFRAME&gt;
+            &lt;/TD&gt;
+          &lt;TD class=normal width=120&gt;&lt;IMG SRC=&quot;/images/cart.jpg&quot;&gt;&lt;A
+HREF=&quot;/cgi-bin/badstore.cgi?action=cartview&quot;&gt;View Cart&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#333333&gt;
+          &lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;FONT FACE=&#39;Arial&#39;&gt;
+&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML//EN&quot;&gt;
+&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;Welcome to BadStore.net v1.2.3s - The most insecure store on the &#39;Net!&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;&lt;center&gt;&lt;H1&gt;&lt;font color=#004b2c&gt;Welcome to BadStore.net!&lt;/font&gt;&lt;/H1&gt;&lt;HR&gt;&lt;P&gt;&lt;IMG BORDER=&quot;0&quot; SRC=&quot;/images/store1.jpg&quot;&gt;&lt;/center&gt;&lt;P&gt;&lt;HR&gt;&lt;P&gt;&lt;BR&gt;&lt;Center&gt;&lt;FONT SIZE=2, FACE=&#39;Times&#39;&gt;BadStore v1.2.3s - Copyright &amp;#169; 2004-2005&lt;/Center&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>SSOid</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: SSOid</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the HttpOnly flag is set for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">Cookie sin el atributo SameSite</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://www.badstore.net/cgi-bin/badstore.cgi?action=register</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1275.html">CWE-1275</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a &#39;cross-site&#39; request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (384 bytes)</summary>
+				
+				<pre><code>POST http://www.badstore.net/cgi-bin/badstore.cgi?action=register HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://www.badstore.net/cgi-bin/badstore.cgi?action=loginregister
+content-length: 89
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (89 bytes)</summary>
+				
+				<pre><code>fullname=ZAP&amp;email=zaproxy%40example.com&amp;passwd=ZAP&amp;pwdhint=blue&amp;role=U&amp;Register=Register</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (342 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 24 Aug 2024 21:49:32 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Cache-Control: no-cache
+ETag: CPE1704TKS
+Pragma: no-cache
+Set-Cookie: SSOid=emFwcm94eUBleGFtcGxlLmNvbTo5MDNhOThkNzA5ZmE0NjgzYWFhYTAzNmI4NGMxMjVhNjpaQVA6%0AVQ%3D%3D%0A; path=/
+Content-Type: text/html
+content-length: 4046
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4046 bytes)</summary>
+				
+				<pre><code>&lt;BODY bgColor=#ffffff leftMargin=0 topMargin=0 MARGINHEIGHT=&quot;0&quot; MARGINWIDTH=&quot;0&quot;&gt;
+
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 bgColor=#004b2c border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD width=326 bgColor=#004b2c&gt;
+&lt;IMG height=60 alt=&quot;BadStore.net&quot; hspace=0 src=&quot;/images/BadStore.jpg&quot;
+width=350
+border=0&gt;
+  &lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR vAlign=top align=left&gt;
+    &lt;TD vAlign=top width=143 bgColor=#ecece0&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=143 bgColor=#004b2c border=0&gt;
+        &lt;FORM name=search onsubmit=/cgi-bin/badstore.cgi 
+        method=get&gt; 
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD vAlign=top width=143 colSpan=3&gt;
+            &lt;TABLE cellSpacing=0 cellPadding=0 width=143 border=0&gt;
+              &lt;TBODY&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR vAlign=center bgColor=#004b2c width=&quot;138&quot;&gt;
+                &lt;TD class=normal width=94 height=30&gt;&amp;nbsp;&lt;INPUT class=normal 
+                  maxLength=60 size=10 name=searchquery&gt; &lt;/TD&gt;
+		&lt;font color=yellow size=2 face=Arial&gt;&lt;Center&gt;&lt;B&gt;Quick Item Search&lt;/B&gt;&lt;/Center&gt;&lt;/font&gt;
+                &lt;TD width=44&gt;
+                  &lt;BR&gt;&lt;INPUT type=hidden value=&#39;search&#39; name=&#39;action&#39;&gt; 
+                  &lt;INPUT 
+                  onclick=&quot;Go Search&quot; type=image height=25 alt=&quot;Go Search&quot; 
+                  width=44 
+                  src=&quot;/images/index.gif&quot; 
+                  border=0&gt;&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD colSpan=2&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/FORM&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          
+          &lt;TD class=normal width=135&gt;&lt;BR&gt; 
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi&quot;&gt;Home &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=whatsnew&quot;&gt;What&#39;s New &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=guestbook&quot;&gt;Sign Our Guestbook &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=viewprevious&quot;&gt;View Previous Orders &lt;BR&gt;&lt;/A&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=aboutus&quot;&gt;About Us &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=myaccount&quot;&gt;My Account&lt;/A&gt;&lt;BR&gt;&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=loginregister&quot;&gt;Login / Register&lt;/A&gt;&lt;BR&gt;
+		&lt;Center&gt;&lt;P&gt;&lt;HR&gt;&lt;B&gt;- Suppliers Only -&lt;/B&gt;&lt;P&gt;&lt;/Center&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=supplierlogin&quot;&gt;Supplier
+Login&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/DoingBusiness/contract.doc&quot;&gt;Supplier Contract&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/Procedures/UploadProc.html&quot;&gt;Supplier Procedures&lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;&lt;HR&gt;
+            &lt;Center&gt;&lt;B&gt;&lt;i&gt;- Reference -&lt;/i&gt;&lt;/B&gt;&lt;/Center&gt;&lt;p&gt;
+		&lt;A HREF=&quot;/BadStore_net_v1_2_Manual.pdf&quot;&gt;&lt;FONT SIZE=-2&gt;&lt;i&gt;BadStore.net Manual
+v1.2&lt;/i&gt;&lt;/FONT&gt;&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/scanbot/scanbot.html&quot;&gt;&lt;/A&gt;
+		&lt;P&gt;
+		&lt;HR&gt;
+		&lt;/TD&gt;&lt;/TR&gt;
+
+&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;
+    &lt;TD width=1 bgColor=#ecece0&gt; 
+      &lt;/TD&gt;
+    &lt;TD width=615&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD bgColor=#333333&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR bgColor=#ecece0&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          &lt;TD class=normal width=550 height=20&gt;&amp;nbsp;
+&lt;IFRAME name=&quot;bsheader&quot; src=&quot;bsheader.cgi&quot; height=27 width=450 marginheight=0 marginwidth=0 scrolling=&quot;no&quot; noresize&gt;&lt;/IFRAME&gt;
+            &lt;/TD&gt;
+          &lt;TD class=normal width=120&gt;&lt;IMG SRC=&quot;/images/cart.jpg&quot;&gt;&lt;A
+HREF=&quot;/cgi-bin/badstore.cgi?action=cartview&quot;&gt;View Cart&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#333333&gt;
+          &lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;FONT FACE=&#39;Arial&#39;&gt;
+&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML//EN&quot;&gt;
+&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;Welcome to BadStore.net v1.2.3s - The most insecure store on the &#39;Net!&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;&lt;center&gt;&lt;H1&gt;&lt;font color=#004b2c&gt;Welcome to BadStore.net!&lt;/font&gt;&lt;/H1&gt;&lt;HR&gt;&lt;P&gt;&lt;IMG BORDER=&quot;0&quot; SRC=&quot;/images/store1.jpg&quot;&gt;&lt;/center&gt;&lt;P&gt;&lt;HR&gt;&lt;P&gt;&lt;BR&gt;&lt;Center&gt;&lt;FONT SIZE=2, FACE=&#39;Times&#39;&gt;BadStore v1.2.3s - Copyright &amp;#169; 2004-2005&lt;/Center&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>SSOid</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: SSOid</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese que el atributo SameSite está establecido como &#39;lax&#39; o idealmente &#39;strict&#39; para todas las cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">Private IP Disclosure</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://www.badstore.net/sitemap.xml</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/200.html">CWE-200</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A private IP (such as 10.x.x.x, 172.x.x.x, 192.168.x.x) or an Amazon EC2 private hostname (for example, ip-10-0-56-78) has been found in the HTTP response body. This information might be helpful for further attacks targeting internal systems.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>192.168.56.110</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (213 bytes)</summary>
+				
+				<pre><code>GET http://www.badstore.net/sitemap.xml HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (189 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Sat, 24 Aug 2024 21:49:30 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Content-Type: text/html; charset=iso-8859-1
+content-length: 276
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (276 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;HTML&gt;&lt;HEAD&gt;
+&lt;TITLE&gt;404 Not Found&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;H1&gt;Not Found&lt;/H1&gt;
+The requested URL /sitemap.xml was not found on this server.&lt;P&gt;
+&lt;HR&gt;
+&lt;ADDRESS&gt;Apache/1.3.28 Server at 192.168.56.110 Port 80&lt;/ADDRESS&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>192.168.56.110</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Remove the private IP address from the HTTP response body.  For comments, use JSP/ASP/PHP comment instead of HTML/JavaScript comment which can be seen by client browsers.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-11">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://www.badstore.net/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (212 bytes)</summary>
+				
+				<pre><code>GET http://www.badstore.net/robots.txt HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (283 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 24 Aug 2024 21:49:29 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Last-Modified: Mon, 29 Nov 2004 20:51:21 GMT
+ETag: &quot;14e-13c-41ab8bc9&quot;
+Accept-Ranges: bytes
+Content-Length: 316
+Content-Type: text/plain
+X-Pad: avoid browser bug
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (316 bytes)</summary>
+				
+				<pre><code># /robots.txt file for http://www.badstore.net/
+# mail webmaster@badstore.net for constructive criticism
+
+User-agent: badstore_webcrawler
+Disallow:
+
+User-agent: googlebot
+Disallow: /cgi-bin
+Disallow: /scanbot # We like Google
+
+User-agent: *
+Disallow: /backup
+Disallow: /cgi-bin
+Disallow: /supplier
+Disallow: /upload
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-0-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Alta</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://www.badstore.net</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-12">GET para POST</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://www.badstore.net/cgi-bin/badstore.cgi?action=register</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/06-Test_HTTP_Methods">WSTG-v42-CONF-06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A04_2021-Insecure_Design/">OWASP_2021_A04</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/16.html">CWE-16</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Una solicitud que originalmente se observó como POST también se aceptó como GET. Este problema no representa una debilidad de seguridad en sí mismo, sin embargo, puede facilitar la simplificación de otros ataques. Por ejemplo, si el POST original está sujeto a Cross-Site Scripting (XSS), este descubrimiento puede indicar que también es posible un ataque XSS simplificado (basado en GET).</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (435 bytes)</summary>
+				
+				<pre><code>GET http://www.badstore.net/cgi-bin/badstore.cgi?Register=Register&amp;email=zaproxy@example.com&amp;fullname=ZAP&amp;passwd=ZAP&amp;pwdhint=blue&amp;role=U HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://www.badstore.net/cgi-bin/badstore.cgi?action=loginregister
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (224 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 24 Aug 2024 21:57:21 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Cache-Control: no-cache
+ETag: CPE1704TKS
+Pragma: no-cache
+Content-Type: text/html
+content-length: 4046
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4046 bytes)</summary>
+				
+				<pre><code>&lt;BODY bgColor=#ffffff leftMargin=0 topMargin=0 MARGINHEIGHT=&quot;0&quot; MARGINWIDTH=&quot;0&quot;&gt;
+
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 bgColor=#004b2c border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD width=326 bgColor=#004b2c&gt;
+&lt;IMG height=60 alt=&quot;BadStore.net&quot; hspace=0 src=&quot;/images/BadStore.jpg&quot;
+width=350
+border=0&gt;
+  &lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR vAlign=top align=left&gt;
+    &lt;TD vAlign=top width=143 bgColor=#ecece0&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=143 bgColor=#004b2c border=0&gt;
+        &lt;FORM name=search onsubmit=/cgi-bin/badstore.cgi 
+        method=get&gt; 
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD vAlign=top width=143 colSpan=3&gt;
+            &lt;TABLE cellSpacing=0 cellPadding=0 width=143 border=0&gt;
+              &lt;TBODY&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR vAlign=center bgColor=#004b2c width=&quot;138&quot;&gt;
+                &lt;TD class=normal width=94 height=30&gt;&amp;nbsp;&lt;INPUT class=normal 
+                  maxLength=60 size=10 name=searchquery&gt; &lt;/TD&gt;
+		&lt;font color=yellow size=2 face=Arial&gt;&lt;Center&gt;&lt;B&gt;Quick Item Search&lt;/B&gt;&lt;/Center&gt;&lt;/font&gt;
+                &lt;TD width=44&gt;
+                  &lt;BR&gt;&lt;INPUT type=hidden value=&#39;search&#39; name=&#39;action&#39;&gt; 
+                  &lt;INPUT 
+                  onclick=&quot;Go Search&quot; type=image height=25 alt=&quot;Go Search&quot; 
+                  width=44 
+                  src=&quot;/images/index.gif&quot; 
+                  border=0&gt;&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD colSpan=2&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/FORM&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          
+          &lt;TD class=normal width=135&gt;&lt;BR&gt; 
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi&quot;&gt;Home &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=whatsnew&quot;&gt;What&#39;s New &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=guestbook&quot;&gt;Sign Our Guestbook &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=viewprevious&quot;&gt;View Previous Orders &lt;BR&gt;&lt;/A&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=aboutus&quot;&gt;About Us &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=myaccount&quot;&gt;My Account&lt;/A&gt;&lt;BR&gt;&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=loginregister&quot;&gt;Login / Register&lt;/A&gt;&lt;BR&gt;
+		&lt;Center&gt;&lt;P&gt;&lt;HR&gt;&lt;B&gt;- Suppliers Only -&lt;/B&gt;&lt;P&gt;&lt;/Center&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=supplierlogin&quot;&gt;Supplier
+Login&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/DoingBusiness/contract.doc&quot;&gt;Supplier Contract&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/Procedures/UploadProc.html&quot;&gt;Supplier Procedures&lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;&lt;HR&gt;
+            &lt;Center&gt;&lt;B&gt;&lt;i&gt;- Reference -&lt;/i&gt;&lt;/B&gt;&lt;/Center&gt;&lt;p&gt;
+		&lt;A HREF=&quot;/BadStore_net_v1_2_Manual.pdf&quot;&gt;&lt;FONT SIZE=-2&gt;&lt;i&gt;BadStore.net Manual
+v1.2&lt;/i&gt;&lt;/FONT&gt;&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/scanbot/scanbot.html&quot;&gt;&lt;/A&gt;
+		&lt;P&gt;
+		&lt;HR&gt;
+		&lt;/TD&gt;&lt;/TR&gt;
+
+&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;
+    &lt;TD width=1 bgColor=#ecece0&gt; 
+      &lt;/TD&gt;
+    &lt;TD width=615&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD bgColor=#333333&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR bgColor=#ecece0&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          &lt;TD class=normal width=550 height=20&gt;&amp;nbsp;
+&lt;IFRAME name=&quot;bsheader&quot; src=&quot;bsheader.cgi&quot; height=27 width=450 marginheight=0 marginwidth=0 scrolling=&quot;no&quot; noresize&gt;&lt;/IFRAME&gt;
+            &lt;/TD&gt;
+          &lt;TD class=normal width=120&gt;&lt;IMG SRC=&quot;/images/cart.jpg&quot;&gt;&lt;A
+HREF=&quot;/cgi-bin/badstore.cgi?action=cartview&quot;&gt;View Cart&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#333333&gt;
+          &lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;FONT FACE=&#39;Arial&#39;&gt;
+&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML//EN&quot;&gt;
+&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;Welcome to BadStore.net v1.2.3s - The most insecure store on the &#39;Net!&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;&lt;center&gt;&lt;H1&gt;&lt;font color=#004b2c&gt;Welcome to BadStore.net!&lt;/font&gt;&lt;/H1&gt;&lt;HR&gt;&lt;P&gt;&lt;IMG BORDER=&quot;0&quot; SRC=&quot;/images/store1.jpg&quot;&gt;&lt;/center&gt;&lt;P&gt;&lt;HR&gt;&lt;P&gt;&lt;BR&gt;&lt;Center&gt;&lt;FONT SIZE=2, FACE=&#39;Times&#39;&gt;BadStore v1.2.3s - Copyright &amp;#169; 2004-2005&lt;/Center&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>GET http://www.badstore.net/cgi-bin/badstore.cgi?Register=Register&amp;email=zaproxy@example.com&amp;fullname=ZAP&amp;passwd=ZAP&amp;pwdhint=blue&amp;role=U HTTP/1.1</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrate de que solo se acepta POST donde se espera POST.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-14">Petición de Autenticación Identificada</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://www.badstore.net/cgi-bin/badstore.cgi?action=login</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>La petición en cuestión se ha identificado como una petición de autenticación. El campo &quot;Otra información&quot; contiene un conjunto de líneas key=vvalue que identifican cualquier campo relevante. Si la solicitud está en un contexto que tiene un método de autenticación configurado como &quot;Detección automática&quot;, esta regla cambiará la autenticación para que coincida con la petición identificada.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>userParam=email</p>
+
+<p>userValue=zaproxy@example.com</p>
+
+<p>passwordParam=passwd</p>
+
+<p>referer=http://www.badstore.net/cgi-bin/badstore.cgi?action=loginregister</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (381 bytes)</summary>
+				
+				<pre><code>POST http://www.badstore.net/cgi-bin/badstore.cgi?action=login HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://www.badstore.net/cgi-bin/badstore.cgi?action=loginregister
+content-length: 50
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (50 bytes)</summary>
+				
+				<pre><code>email=zaproxy%40example.com&amp;passwd=ZAP&amp;Login=Login</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (224 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 24 Aug 2024 21:49:32 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Cache-Control: no-cache
+ETag: CPE1704TKS
+Pragma: no-cache
+Content-Type: text/html
+content-length: 3958
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3958 bytes)</summary>
+				
+				<pre><code>&lt;BODY bgColor=#ffffff leftMargin=0 topMargin=0 MARGINHEIGHT=&quot;0&quot; MARGINWIDTH=&quot;0&quot;&gt;
+
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 bgColor=#004b2c border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD width=326 bgColor=#004b2c&gt;
+&lt;IMG height=60 alt=&quot;BadStore.net&quot; hspace=0 src=&quot;/images/BadStore.jpg&quot;
+width=350
+border=0&gt;
+  &lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR vAlign=top align=left&gt;
+    &lt;TD vAlign=top width=143 bgColor=#ecece0&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=143 bgColor=#004b2c border=0&gt;
+        &lt;FORM name=search onsubmit=/cgi-bin/badstore.cgi 
+        method=get&gt; 
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD vAlign=top width=143 colSpan=3&gt;
+            &lt;TABLE cellSpacing=0 cellPadding=0 width=143 border=0&gt;
+              &lt;TBODY&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR vAlign=center bgColor=#004b2c width=&quot;138&quot;&gt;
+                &lt;TD class=normal width=94 height=30&gt;&amp;nbsp;&lt;INPUT class=normal 
+                  maxLength=60 size=10 name=searchquery&gt; &lt;/TD&gt;
+		&lt;font color=yellow size=2 face=Arial&gt;&lt;Center&gt;&lt;B&gt;Quick Item Search&lt;/B&gt;&lt;/Center&gt;&lt;/font&gt;
+                &lt;TD width=44&gt;
+                  &lt;BR&gt;&lt;INPUT type=hidden value=&#39;search&#39; name=&#39;action&#39;&gt; 
+                  &lt;INPUT 
+                  onclick=&quot;Go Search&quot; type=image height=25 alt=&quot;Go Search&quot; 
+                  width=44 
+                  src=&quot;/images/index.gif&quot; 
+                  border=0&gt;&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD colSpan=2&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/FORM&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          
+          &lt;TD class=normal width=135&gt;&lt;BR&gt; 
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi&quot;&gt;Home &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=whatsnew&quot;&gt;What&#39;s New &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=guestbook&quot;&gt;Sign Our Guestbook &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=viewprevious&quot;&gt;View Previous Orders &lt;BR&gt;&lt;/A&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=aboutus&quot;&gt;About Us &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=myaccount&quot;&gt;My Account&lt;/A&gt;&lt;BR&gt;&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=loginregister&quot;&gt;Login / Register&lt;/A&gt;&lt;BR&gt;
+		&lt;Center&gt;&lt;P&gt;&lt;HR&gt;&lt;B&gt;- Suppliers Only -&lt;/B&gt;&lt;P&gt;&lt;/Center&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=supplierlogin&quot;&gt;Supplier
+Login&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/DoingBusiness/contract.doc&quot;&gt;Supplier Contract&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/Procedures/UploadProc.html&quot;&gt;Supplier Procedures&lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;&lt;HR&gt;
+            &lt;Center&gt;&lt;B&gt;&lt;i&gt;- Reference -&lt;/i&gt;&lt;/B&gt;&lt;/Center&gt;&lt;p&gt;
+		&lt;A HREF=&quot;/BadStore_net_v1_2_Manual.pdf&quot;&gt;&lt;FONT SIZE=-2&gt;&lt;i&gt;BadStore.net Manual
+v1.2&lt;/i&gt;&lt;/FONT&gt;&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/scanbot/scanbot.html&quot;&gt;&lt;/A&gt;
+		&lt;P&gt;
+		&lt;HR&gt;
+		&lt;/TD&gt;&lt;/TR&gt;
+
+&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;
+    &lt;TD width=1 bgColor=#ecece0&gt; 
+      &lt;/TD&gt;
+    &lt;TD width=615&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD bgColor=#333333&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR bgColor=#ecece0&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          &lt;TD class=normal width=550 height=20&gt;&amp;nbsp;
+&lt;IFRAME name=&quot;bsheader&quot; src=&quot;bsheader.cgi&quot; height=27 width=450 marginheight=0 marginwidth=0 scrolling=&quot;no&quot; noresize&gt;&lt;/IFRAME&gt;
+            &lt;/TD&gt;
+          &lt;TD class=normal width=120&gt;&lt;IMG SRC=&quot;/images/cart.jpg&quot;&gt;&lt;A
+HREF=&quot;/cgi-bin/badstore.cgi?action=cartview&quot;&gt;View Cart&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#333333&gt;
+          &lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;FONT FACE=&#39;Arial&#39;&gt;
+&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML//EN&quot;&gt;
+&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;BadStore.net - Login Error&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;&lt;H2&gt;UserID and Password not found!&lt;/H2&gt;Use your browser&#39;s Back button and try again.&lt;HR&gt;&lt;P&gt;&lt;BR&gt;&lt;Center&gt;&lt;FONT SIZE=2, FACE=&#39;Times&#39;&gt;BadStore v1.2.3s - Copyright &amp;#169; 2004-2005&lt;/Center&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>email</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>passwd</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Se trata de una alerta informativa y no de una vulnerabilidad, por lo que no hay nada que corregir.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Media</span> <span>(3)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://www.badstore.net</span> <span>(3)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-13">Modern Web Application</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://www.badstore.net/scanbot/scanbot.html</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (277 bytes)</summary>
+				
+				<pre><code>GET http://www.badstore.net/scanbot/scanbot.html HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+referer: http://www.badstore.net/cgi-bin/badstore.cgi
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (256 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 24 Aug 2024 21:49:31 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Last-Modified: Wed, 15 Dec 2004 14:39:02 GMT
+ETag: &quot;151-12e-41c04c86&quot;
+Accept-Ranges: bytes
+Content-Length: 302
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (302 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0 Transitional//EN&quot;&gt;
+&lt;HTML&gt;&lt;HEAD&gt;&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;SCRIPT language=&quot;javascript&quot;&gt;
+&lt;!-- Begin
+function redirect() {
+var destination = &#39;http://www.badstore.net/scanbot/deth2botz.html&#39;;
+window.location = destination;
+}
+redirect();
+// End --&gt;
+&lt;/SCRIPT&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;SCRIPT language=&quot;javascript&quot;&gt;
+&lt;!-- Begin
+function redirect() {
+var destination = &#39;http://www.badstore.net/scanbot/deth2botz.html&#39;;
+window.location = destination;
+}
+redirect();
+// End --&gt;
+&lt;/SCRIPT&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert and so no changes are required.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-15">Respuesta de Gestión de Sesión Identificada</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://www.badstore.net/cgi-bin/badstore.cgi?action=register</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Se ha identificado que la respuesta dada contiene un token de gestión de sesión. El campo &#39;Other Info&#39; contiene un conjunto de tokens de cabecera que pueden utilizarse en el método Header Based Session Management (gestión de sesión basado en cabecera). Si la petición se encuentra en un contexto que tiene un método Session Management establecido en &quot;Auto-Detect&quot;, esta regla cambiará la gestión de sesión para utilizar los tokens identificados.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>cookie:SSOid</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (384 bytes)</summary>
+				
+				<pre><code>POST http://www.badstore.net/cgi-bin/badstore.cgi?action=register HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://www.badstore.net/cgi-bin/badstore.cgi?action=loginregister
+content-length: 89
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (89 bytes)</summary>
+				
+				<pre><code>fullname=ZAP&amp;email=zaproxy%40example.com&amp;passwd=ZAP&amp;pwdhint=blue&amp;role=U&amp;Register=Register</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (342 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 24 Aug 2024 21:49:32 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Cache-Control: no-cache
+ETag: CPE1704TKS
+Pragma: no-cache
+Set-Cookie: SSOid=emFwcm94eUBleGFtcGxlLmNvbTo5MDNhOThkNzA5ZmE0NjgzYWFhYTAzNmI4NGMxMjVhNjpaQVA6%0AVQ%3D%3D%0A; path=/
+Content-Type: text/html
+content-length: 4046
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4046 bytes)</summary>
+				
+				<pre><code>&lt;BODY bgColor=#ffffff leftMargin=0 topMargin=0 MARGINHEIGHT=&quot;0&quot; MARGINWIDTH=&quot;0&quot;&gt;
+
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 bgColor=#004b2c border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD width=326 bgColor=#004b2c&gt;
+&lt;IMG height=60 alt=&quot;BadStore.net&quot; hspace=0 src=&quot;/images/BadStore.jpg&quot;
+width=350
+border=0&gt;
+  &lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR vAlign=top align=left&gt;
+    &lt;TD vAlign=top width=143 bgColor=#ecece0&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=143 bgColor=#004b2c border=0&gt;
+        &lt;FORM name=search onsubmit=/cgi-bin/badstore.cgi 
+        method=get&gt; 
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD vAlign=top width=143 colSpan=3&gt;
+            &lt;TABLE cellSpacing=0 cellPadding=0 width=143 border=0&gt;
+              &lt;TBODY&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR vAlign=center bgColor=#004b2c width=&quot;138&quot;&gt;
+                &lt;TD class=normal width=94 height=30&gt;&amp;nbsp;&lt;INPUT class=normal 
+                  maxLength=60 size=10 name=searchquery&gt; &lt;/TD&gt;
+		&lt;font color=yellow size=2 face=Arial&gt;&lt;Center&gt;&lt;B&gt;Quick Item Search&lt;/B&gt;&lt;/Center&gt;&lt;/font&gt;
+                &lt;TD width=44&gt;
+                  &lt;BR&gt;&lt;INPUT type=hidden value=&#39;search&#39; name=&#39;action&#39;&gt; 
+                  &lt;INPUT 
+                  onclick=&quot;Go Search&quot; type=image height=25 alt=&quot;Go Search&quot; 
+                  width=44 
+                  src=&quot;/images/index.gif&quot; 
+                  border=0&gt;&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD colSpan=2&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/FORM&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          
+          &lt;TD class=normal width=135&gt;&lt;BR&gt; 
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi&quot;&gt;Home &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=whatsnew&quot;&gt;What&#39;s New &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=guestbook&quot;&gt;Sign Our Guestbook &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=viewprevious&quot;&gt;View Previous Orders &lt;BR&gt;&lt;/A&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=aboutus&quot;&gt;About Us &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=myaccount&quot;&gt;My Account&lt;/A&gt;&lt;BR&gt;&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=loginregister&quot;&gt;Login / Register&lt;/A&gt;&lt;BR&gt;
+		&lt;Center&gt;&lt;P&gt;&lt;HR&gt;&lt;B&gt;- Suppliers Only -&lt;/B&gt;&lt;P&gt;&lt;/Center&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=supplierlogin&quot;&gt;Supplier
+Login&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/DoingBusiness/contract.doc&quot;&gt;Supplier Contract&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/Procedures/UploadProc.html&quot;&gt;Supplier Procedures&lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;&lt;HR&gt;
+            &lt;Center&gt;&lt;B&gt;&lt;i&gt;- Reference -&lt;/i&gt;&lt;/B&gt;&lt;/Center&gt;&lt;p&gt;
+		&lt;A HREF=&quot;/BadStore_net_v1_2_Manual.pdf&quot;&gt;&lt;FONT SIZE=-2&gt;&lt;i&gt;BadStore.net Manual
+v1.2&lt;/i&gt;&lt;/FONT&gt;&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/scanbot/scanbot.html&quot;&gt;&lt;/A&gt;
+		&lt;P&gt;
+		&lt;HR&gt;
+		&lt;/TD&gt;&lt;/TR&gt;
+
+&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;
+    &lt;TD width=1 bgColor=#ecece0&gt; 
+      &lt;/TD&gt;
+    &lt;TD width=615&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD bgColor=#333333&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR bgColor=#ecece0&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          &lt;TD class=normal width=550 height=20&gt;&amp;nbsp;
+&lt;IFRAME name=&quot;bsheader&quot; src=&quot;bsheader.cgi&quot; height=27 width=450 marginheight=0 marginwidth=0 scrolling=&quot;no&quot; noresize&gt;&lt;/IFRAME&gt;
+            &lt;/TD&gt;
+          &lt;TD class=normal width=120&gt;&lt;IMG SRC=&quot;/images/cart.jpg&quot;&gt;&lt;A
+HREF=&quot;/cgi-bin/badstore.cgi?action=cartview&quot;&gt;View Cart&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#333333&gt;
+          &lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;FONT FACE=&#39;Arial&#39;&gt;
+&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML//EN&quot;&gt;
+&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;Welcome to BadStore.net v1.2.3s - The most insecure store on the &#39;Net!&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;&lt;center&gt;&lt;H1&gt;&lt;font color=#004b2c&gt;Welcome to BadStore.net!&lt;/font&gt;&lt;/H1&gt;&lt;HR&gt;&lt;P&gt;&lt;IMG BORDER=&quot;0&quot; SRC=&quot;/images/store1.jpg&quot;&gt;&lt;/center&gt;&lt;P&gt;&lt;HR&gt;&lt;P&gt;&lt;BR&gt;&lt;Center&gt;&lt;FONT SIZE=2, FACE=&#39;Times&#39;&gt;BadStore v1.2.3s - Copyright &amp;#169; 2004-2005&lt;/Center&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>SSOid</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>emFwcm94eUBleGFtcGxlLmNvbTo5MDNhOThkNzA5ZmE0NjgzYWFhYTAzNmI4NGMxMjVhNjpaQVA6%0AVQ%3D%3D%0A</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Se trata de una alerta informativa y no de una vulnerabilidad, por lo que no hay nada que corregir.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-16">User Agent Fuzzer</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://www.badstore.net/cgi-bin/badstore.cgi?action=doguestbook</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Compare las diferencias en la respuesta según el fuzzeo de User Agent (por ejemplo, sitios móviles, acceso como un motor de búsqueda). Compara el código de estado de la respuesta y el hash del cuerpo de la respuesta con la respuesta original.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (352 bytes)</summary>
+				
+				<pre><code>POST http://www.badstore.net/cgi-bin/badstore.cgi?action=doguestbook HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://www.badstore.net/cgi-bin/badstore.cgi?action=guestbook
+content-length: 0
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (225 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 24 Aug 2024 21:57:21 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Cache-Control: no-cache
+ETag: CPE1704TKS
+Pragma: no-cache
+Content-Type: text/html
+content-length: 12473
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (12473 bytes)</summary>
+				
+				<pre><code>&lt;BODY bgColor=#ffffff leftMargin=0 topMargin=0 MARGINHEIGHT=&quot;0&quot; MARGINWIDTH=&quot;0&quot;&gt;
+
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 bgColor=#004b2c border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD width=326 bgColor=#004b2c&gt;
+&lt;IMG height=60 alt=&quot;BadStore.net&quot; hspace=0 src=&quot;/images/BadStore.jpg&quot;
+width=350
+border=0&gt;
+  &lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR vAlign=top align=left&gt;
+    &lt;TD vAlign=top width=143 bgColor=#ecece0&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=143 bgColor=#004b2c border=0&gt;
+        &lt;FORM name=search onsubmit=/cgi-bin/badstore.cgi 
+        method=get&gt; 
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD vAlign=top width=143 colSpan=3&gt;
+            &lt;TABLE cellSpacing=0 cellPadding=0 width=143 border=0&gt;
+              &lt;TBODY&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR vAlign=center bgColor=#004b2c width=&quot;138&quot;&gt;
+                &lt;TD class=normal width=94 height=30&gt;&amp;nbsp;&lt;INPUT class=normal 
+                  maxLength=60 size=10 name=searchquery&gt; &lt;/TD&gt;
+		&lt;font color=yellow size=2 face=Arial&gt;&lt;Center&gt;&lt;B&gt;Quick Item Search&lt;/B&gt;&lt;/Center&gt;&lt;/font&gt;
+                &lt;TD width=44&gt;
+                  &lt;BR&gt;&lt;INPUT type=hidden value=&#39;search&#39; name=&#39;action&#39;&gt; 
+                  &lt;INPUT 
+                  onclick=&quot;Go Search&quot; type=image height=25 alt=&quot;Go Search&quot; 
+                  width=44 
+                  src=&quot;/images/index.gif&quot; 
+                  border=0&gt;&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD colSpan=2&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/FORM&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          
+          &lt;TD class=normal width=135&gt;&lt;BR&gt; 
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi&quot;&gt;Home &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=whatsnew&quot;&gt;What&#39;s New &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=guestbook&quot;&gt;Sign Our Guestbook &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=viewprevious&quot;&gt;View Previous Orders &lt;BR&gt;&lt;/A&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=aboutus&quot;&gt;About Us &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=myaccount&quot;&gt;My Account&lt;/A&gt;&lt;BR&gt;&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=loginregister&quot;&gt;Login / Register&lt;/A&gt;&lt;BR&gt;
+		&lt;Center&gt;&lt;P&gt;&lt;HR&gt;&lt;B&gt;- Suppliers Only -&lt;/B&gt;&lt;P&gt;&lt;/Center&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=supplierlogin&quot;&gt;Supplier
+Login&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/DoingBusiness/contract.doc&quot;&gt;Supplier Contract&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/Procedures/UploadProc.html&quot;&gt;Supplier Procedures&lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;&lt;HR&gt;
+            &lt;Center&gt;&lt;B&gt;&lt;i&gt;- Reference -&lt;/i&gt;&lt;/B&gt;&lt;/Center&gt;&lt;p&gt;
+		&lt;A HREF=&quot;/BadStore_net_v1_2_Manual.pdf&quot;&gt;&lt;FONT SIZE=-2&gt;&lt;i&gt;BadStore.net Manual
+v1.2&lt;/i&gt;&lt;/FONT&gt;&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/scanbot/scanbot.html&quot;&gt;&lt;/A&gt;
+		&lt;P&gt;
+		&lt;HR&gt;
+		&lt;/TD&gt;&lt;/TR&gt;
+
+&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;
+    &lt;TD width=1 bgColor=#ecece0&gt; 
+      &lt;/TD&gt;
+    &lt;TD width=615&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD bgColor=#333333&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR bgColor=#ecece0&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          &lt;TD class=normal width=550 height=20&gt;&amp;nbsp;
+&lt;IFRAME name=&quot;bsheader&quot; src=&quot;bsheader.cgi&quot; height=27 width=450 marginheight=0 marginwidth=0 scrolling=&quot;no&quot; noresize&gt;&lt;/IFRAME&gt;
+            &lt;/TD&gt;
+          &lt;TD class=normal width=120&gt;&lt;IMG SRC=&quot;/images/cart.jpg&quot;&gt;&lt;A
+HREF=&quot;/cgi-bin/badstore.cgi?action=cartview&quot;&gt;View Cart&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#333333&gt;
+          &lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;FONT FACE=&#39;Arial&#39;&gt;
+&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML//EN&quot;&gt;
+&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;Welcome to the BadStore.net Guestbook&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;&lt;H1&gt;Guestbook&lt;/H1&gt;&lt;HR&gt;Wednesday, February 18, 2004 at 07:42:34: &lt;B&gt;Joe Shopper&lt;/B&gt; &lt;A HREF=mailto:joe@microsoft.com&gt;joe@microsoft.com&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;This is a great site!  I&#39;m going to shop here every day.
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Wednesday, February 18, 2004 at 11:41:07: &lt;B&gt;John Q. Public&lt;/B&gt; &lt;A HREF=mailto:jqp@whitehouse.gov&gt;jqp@whitehouse.gov&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;Let me know when the summer items are in.
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Friday, February 20, 2004 at 14:05:22: &lt;B&gt;Big Spender&lt;/B&gt; &lt;A HREF=mailto:billg@microsoft.com&gt;billg@microsoft.com&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;Where&#39;s the big ticket items?
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Sunday, February 22, 2004 at 06:16:05: &lt;B&gt;Evil Hacker&lt;/B&gt; &lt;A HREF=mailto:s8n@haxor.com&gt;s8n@haxor.com&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;You have no security!  I can own your site in less than 2 minutes.  Pay me $100,000 US currency by the end of day Friday, or I will hack you offline and sell the credit card numbers I found on your site.  Send the money direct to my PayPal account.
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:49:35: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:49:35: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:01: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:01: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:01: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:01: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:01: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:02: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:02: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:02: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:02: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:02: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:02: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:02: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:02: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:03: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:03: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:24: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:24: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:25: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:25: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:25: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:25: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:25: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:25: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:25: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:25: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:43: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:43: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:43: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:43: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:43: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:44: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:44: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:44: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:44: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:55: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:55: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:55: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:50:55: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:03: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:03: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:03: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:04: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:04: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:11: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:12: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:13: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:14: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:19: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:20: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:20: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:20: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:20: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:21: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:21: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:21: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:21: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:21: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:22: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:22: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:22: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:22: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:22: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:22: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:23: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:23: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:23: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:23: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:24: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:24: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:24: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:44: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:44: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:44: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:45: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:45: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:45: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:46: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:46: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:46: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:51:46: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:52:01: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;
+&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+Saturday, August 24, 2024 at 21:52:: &lt;B&gt;&lt;/B&gt; &lt;A HREF=mailto:&gt;&lt;/A&gt;
+&lt;OL&gt;&lt;I&gt;&lt;/I&gt;&lt;/OL&gt;
+&lt;HR&gt;
+&lt;HR&gt;&lt;P&gt;&lt;BR&gt;&lt;Center&gt;&lt;FONT SIZE=2, FACE=&#39;Times&#39;&gt;BadStore v1.2.3s - Copyright &amp;#169; 2004-2005&lt;/Center&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Header User-Agent</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)</code></pre></td>
+	</tr>
+	
+	
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Baja</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://www.badstore.net</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-17">User Controllable HTML Element Attribute (Potential XSS)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://www.badstore.net/cgi-bin/badstore.cgi?action=loginregister&amp;action=search&amp;searchquery=ZAP</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/20.html">CWE-20</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p>
+
+<p>http://www.badstore.net/cgi-bin/badstore.cgi?action=loginregister&amp;action=search&amp;searchquery=ZAP</p>
+
+<p>appears to include user input in: </p>
+
+<p>a(n) [form] tag [name] attribute </p>
+
+<p>The user input found was:</p>
+
+<p>action=search</p>
+
+<p>The user-controlled value was:</p>
+
+<p>search</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (349 bytes)</summary>
+				
+				<pre><code>GET http://www.badstore.net/cgi-bin/badstore.cgi?action=loginregister&amp;action=search&amp;searchquery=ZAP HTTP/1.1
+host: www.badstore.net
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+referer: http://www.badstore.net/cgi-bin/badstore.cgi?action=loginregister
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (224 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Sat, 24 Aug 2024 21:49:32 GMT
+Server: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+Cache-Control: no-cache
+ETag: CPE1704TKS
+Pragma: no-cache
+Content-Type: text/html
+content-length: 5237
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (5237 bytes)</summary>
+				
+				<pre><code>&lt;BODY bgColor=#ffffff leftMargin=0 topMargin=0 MARGINHEIGHT=&quot;0&quot; MARGINWIDTH=&quot;0&quot;&gt;
+
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 bgColor=#004b2c border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD width=326 bgColor=#004b2c&gt;
+&lt;IMG height=60 alt=&quot;BadStore.net&quot; hspace=0 src=&quot;/images/BadStore.jpg&quot;
+width=350
+border=0&gt;
+  &lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;TABLE cellSpacing=0 cellPadding=0 width=760 border=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR vAlign=top align=left&gt;
+    &lt;TD vAlign=top width=143 bgColor=#ecece0&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=143 bgColor=#004b2c border=0&gt;
+        &lt;FORM name=search onsubmit=/cgi-bin/badstore.cgi 
+        method=get&gt; 
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD vAlign=top width=143 colSpan=3&gt;
+            &lt;TABLE cellSpacing=0 cellPadding=0 width=143 border=0&gt;
+              &lt;TBODY&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR vAlign=center bgColor=#004b2c width=&quot;138&quot;&gt;
+                &lt;TD class=normal width=94 height=30&gt;&amp;nbsp;&lt;INPUT class=normal 
+                  maxLength=60 size=10 name=searchquery&gt; &lt;/TD&gt;
+		&lt;font color=yellow size=2 face=Arial&gt;&lt;Center&gt;&lt;B&gt;Quick Item Search&lt;/B&gt;&lt;/Center&gt;&lt;/font&gt;
+                &lt;TD width=44&gt;
+                  &lt;BR&gt;&lt;INPUT type=hidden value=&#39;search&#39; name=&#39;action&#39;&gt; 
+                  &lt;INPUT 
+                  onclick=&quot;Go Search&quot; type=image height=25 alt=&quot;Go Search&quot; 
+                  width=44 
+                  src=&quot;/images/index.gif&quot; 
+                  border=0&gt;&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR bgColor=#004b2c&gt;
+                &lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD colSpan=2&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/FORM&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          
+          &lt;TD class=normal width=135&gt;&lt;BR&gt; 
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi&quot;&gt;Home &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=whatsnew&quot;&gt;What&#39;s New &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=guestbook&quot;&gt;Sign Our Guestbook &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=viewprevious&quot;&gt;View Previous Orders &lt;BR&gt;&lt;/A&gt;
+		&lt;P&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=aboutus&quot;&gt;About Us &lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=myaccount&quot;&gt;My Account&lt;/A&gt;&lt;BR&gt;&lt;P&gt;
+		&lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=loginregister&quot;&gt;Login / Register&lt;/A&gt;&lt;BR&gt;
+		&lt;Center&gt;&lt;P&gt;&lt;HR&gt;&lt;B&gt;- Suppliers Only -&lt;/B&gt;&lt;P&gt;&lt;/Center&gt;
+            &lt;A HREF=&quot;/cgi-bin/badstore.cgi?action=supplierlogin&quot;&gt;Supplier
+Login&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/DoingBusiness/contract.doc&quot;&gt;Supplier Contract&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/Procedures/UploadProc.html&quot;&gt;Supplier Procedures&lt;/A&gt;&lt;BR&gt;
+		&lt;P&gt;&lt;HR&gt;
+            &lt;Center&gt;&lt;B&gt;&lt;i&gt;- Reference -&lt;/i&gt;&lt;/B&gt;&lt;/Center&gt;&lt;p&gt;
+		&lt;A HREF=&quot;/BadStore_net_v1_2_Manual.pdf&quot;&gt;&lt;FONT SIZE=-2&gt;&lt;i&gt;BadStore.net Manual
+v1.2&lt;/i&gt;&lt;/FONT&gt;&lt;/A&gt;&lt;BR&gt;
+		&lt;A HREF=&quot;/scanbot/scanbot.html&quot;&gt;&lt;/A&gt;
+		&lt;P&gt;
+		&lt;HR&gt;
+		&lt;/TD&gt;&lt;/TR&gt;
+
+&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;
+    &lt;TD width=1 bgColor=#ecece0&gt; 
+      &lt;/TD&gt;
+    &lt;TD width=615&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD bgColor=#333333&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+      &lt;TABLE cellSpacing=0 cellPadding=0 width=614 border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR bgColor=#ecece0&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#ecece0&gt;
+          &lt;TD class=normal width=550 height=20&gt;&amp;nbsp;
+&lt;IFRAME name=&quot;bsheader&quot; src=&quot;bsheader.cgi&quot; height=27 width=450 marginheight=0 marginwidth=0 scrolling=&quot;no&quot; noresize&gt;&lt;/IFRAME&gt;
+            &lt;/TD&gt;
+          &lt;TD class=normal width=120&gt;&lt;IMG SRC=&quot;/images/cart.jpg&quot;&gt;&lt;A
+HREF=&quot;/cgi-bin/badstore.cgi?action=cartview&quot;&gt;View Cart&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR bgColor=#333333&gt;
+          &lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;FONT FACE=&#39;Arial&#39;&gt;
+&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML//EN&quot;&gt;
+&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;BadStore.net - Register/Login&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;&lt;H2&gt;Login to Your Account or Register for a New Account&lt;/H2&gt;&lt;HR&gt;&lt;P&gt;&lt;H3&gt;Login to Your Account&lt;/H3&gt;&lt;FORM METHOD=&quot;POST&quot; ACTION=&quot;/cgi-bin/badstore.cgi?action=login&quot; ENCTYPE=&quot;application/x-www-form-urlencoded&quot;&gt;
+Email Address:  &lt;INPUT TYPE=&quot;text&quot; NAME=&quot;email&quot;  SIZE=20 MAXLENGTH=40&gt;&lt;P&gt;Password:  &lt;INPUT TYPE=&quot;password&quot; NAME=&quot;passwd&quot;  SIZE=8 8&gt;&lt;P&gt;&lt;INPUT TYPE=&quot;submit&quot; NAME=&quot;Login&quot; VALUE=&quot;Login&quot;&gt;&lt;/FORM&gt;&lt;HR&gt;&lt;P&gt;&lt;H3&gt;Register for a New Account&lt;/H3&gt;&lt;FORM METHOD=&quot;POST&quot; ACTION=&quot;/cgi-bin/badstore.cgi?action=register&quot; ENCTYPE=&quot;application/x-www-form-urlencoded&quot;&gt;
+Full Name:  &lt;INPUT TYPE=&quot;text&quot; NAME=&quot;fullname&quot;  SIZE=25 MAXLENGTH=40&gt;&lt;P&gt;Email Address:  &lt;INPUT TYPE=&quot;text&quot; NAME=&quot;email&quot;  SIZE=20 MAXLENGTH=40&gt;&lt;P&gt;Password:  &lt;INPUT TYPE=&quot;password&quot; NAME=&quot;passwd&quot;  SIZE=8 8&gt;&lt;P&gt;Password Hint - What&#39;s Your Favorite Color?:  &lt;SELECT NAME=&quot;pwdhint&quot;&gt;
+&lt;OPTION  VALUE=&quot;green&quot;&gt;green
+&lt;OPTION  VALUE=&quot;blue&quot;&gt;blue
+&lt;OPTION  VALUE=&quot;red&quot;&gt;red
+&lt;OPTION  VALUE=&quot;orange&quot;&gt;orange
+&lt;OPTION  VALUE=&quot;purple&quot;&gt;purple
+&lt;OPTION  VALUE=&quot;yellow&quot;&gt;yellow
+&lt;/SELECT&gt;
+&lt;P&gt;&lt;font face=Arial size=2&gt;&lt;i&gt;(The Password Hint is used as a security measure to help recover a forgotten password.  You will need both your email address and this hint to access your account if you forget your current password.)&lt;/i&gt;&lt;/font&gt;&lt;P&gt;&lt;INPUT TYPE=&quot;hidden&quot; NAME=&quot;role&quot; VALUE=&quot;U&quot;&gt;&lt;INPUT TYPE=&quot;submit&quot; NAME=&quot;Register&quot; VALUE=&quot;Register&quot;&gt;&lt;/FORM&gt;&lt;P&gt;&lt;HR&gt;&lt;P&gt;&lt;BR&gt;&lt;Center&gt;&lt;FONT SIZE=2, FACE=&#39;Times&#39;&gt;BadStore v1.2.3s - Copyright &amp;#169; 2004-2005&lt;/Center&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>action</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Cross Site Scripting (Reflected)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40012/">Cross Site Scripting (Reflected)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/79.html">79</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>8</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-community/attacks/xss/">https://owasp.org/www-community/attacks/xss/</a></li>
+										<li><a
+											href="https://cwe.mitre.org/data/definitions/79.html">https://cwe.mitre.org/data/definitions/79.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Inyección SQL</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40018/">Inyección SQL</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/89.html">89</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>19</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Inyección SQL - MySQL</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40018/">Inyección SQL</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/89.html">89</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>19</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Inyección SQL - SQLite</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40024/">Inyección SQL - SQLite</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/89.html">89</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>19</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Ausencia de Ttokens Anti-CSRF</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10202/">Ausencia de Ttokens Anti-CSRF</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>9</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://cwe.mitre.org/data/definitions/352.html">https://cwe.mitre.org/data/definitions/352.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Cabecera Content Security Policy (CSP) no configurada</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Cabecera Content Security Policy (CSP) no configurada</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Falta de cabecera Anti-Clickjacking</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Cabecera Anti-Clickjacking</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>Cookie No HttpOnly Flag</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10010/">Cookie No HttpOnly Flag</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1004.html">1004</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-community/HttpOnly">https://owasp.org/www-community/HttpOnly</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>Cookie sin el atributo SameSite</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10054/">Cookie sin el atributo SameSite</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1275.html">1275</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site">https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>Private IP Disclosure</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/2/">Private IP Disclosure</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/rfc1918">https://tools.ietf.org/html/rfc1918</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-10">
+						<h4>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10036/">HTTP Server Response Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/core.html#servertokens">https://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)">https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)</a></li>
+										<li><a
+											href="https://www.troyhunt.com/shhh-dont-let-your-response-headers/">https://www.troyhunt.com/shhh-dont-let-your-response-headers/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-11">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-12">
+						<h4>GET para POST</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10058/">GET para POST</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/16.html">16</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>20</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-13">
+						<h4>Modern Web Application</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10109/">Modern Web Application</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-14">
+						<h4>Petición de Autenticación Identificada</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10111/">Petición de Autenticación Identificada</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-15">
+						<h4>Respuesta de Gestión de Sesión Identificada</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10112/">Respuesta de Gestión de Sesión Identificada</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-16">
+						<h4>User Agent Fuzzer</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10104/">User Agent Fuzzer</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/wstg">https://owasp.org/wstg</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-17">
+						<h4>User Controllable HTML Element Attribute (Potential XSS)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10031/">User Controllable HTML Element Attribute (Potential XSS)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/20.html">20</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>20</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
